@@ -41,4 +41,19 @@ public class MessagesController {
         request.setAttribute("messages",list);
         return "test.jsp";
     }
+
+    @RequestMapping("/getMessage")
+    public String getMessage(@RequestParam(value = "id") int id,
+                             HttpServletRequest request){
+        Messages messages = messagesService.getMessage(id);
+        request.setAttribute("message",messages);
+        return "test.jsp";
+    }
+
+    @RequestMapping("/reply")
+    public String reply(@RequestParam(value = "id") int id,
+                        @RequestParam(value = "content") String content){
+        messagesService.reply(id,content);
+        return "test.jsp";
+    }
 }

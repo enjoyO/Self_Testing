@@ -38,7 +38,7 @@ public class MessagesService {
         return messages;
     }
 
-    public void replay(int id,String content){
+    public void reply(int id,String content){
         Messages messages = this.getMessage(id);
         messages.setReply(content);
     }
