@@ -7,8 +7,6 @@ public class Answer {
 
     private Integer paperId;
 
-    private Integer questionId;
-
     private String studentAnswer;
 
     private Integer score;
@@ -35,14 +33,6 @@ public class Answer {
 
     public void setPaperId(Integer paperId) {
         this.paperId = paperId;
-    }
-
-    public Integer getQuestionId() {
-        return questionId;
-    }
-
-    public void setQuestionId(Integer questionId) {
-        this.questionId = questionId;
     }
 
     public String getStudentAnswer() {

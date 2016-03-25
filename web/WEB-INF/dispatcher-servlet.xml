@@ -9,7 +9,6 @@
 		http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd">
 
     <bean class="com.controller.AnswerController" p:answerService-ref="answerService"/>
-    <bean class="com.controller.MarkController" p:markService-ref="markService"/>
     <bean class="com.controller.MessagesController" p:messagesService-ref="messagesService"/>
     <bean class="com.controller.QuestionBankController" p:questionBankService-ref="questionBankService"/>
     <bean class="com.controller.StudentController" p:studentService-ref="studentService"/>

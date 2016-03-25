@@ -284,66 +284,6 @@ public class AnswerExample {
             return (Criteria) this;
         }
 
-        public Criteria andQuestionIdIsNull() {
-            addCriterion("question_id is null");
-            return (Criteria) this;
-        }
-
-        public Criteria andQuestionIdIsNotNull() {
-            addCriterion("question_id is not null");
-            return (Criteria) this;
-        }
-
-        public Criteria andQuestionIdEqualTo(Integer value) {
-            addCriterion("question_id =", value, "questionId");
-            return (Criteria) this;
-        }
-
-        public Criteria andQuestionIdNotEqualTo(Integer value) {
-            addCriterion("question_id <>", value, "questionId");
-            return (Criteria) this;
-        }
-
-        public Criteria andQuestionIdGreaterThan(Integer value) {
-            addCriterion("question_id >", value, "questionId");
-            return (Criteria) this;
-        }
-
-        public Criteria andQuestionIdGreaterThanOrEqualTo(Integer value) {
-            addCriterion("question_id >=", value, "questionId");
-            return (Criteria) this;
-        }
-
-        public Criteria andQuestionIdLessThan(Integer value) {
-            addCriterion("question_id <", value, "questionId");
-            return (Criteria) this;
-        }
-
-        public Criteria andQuestionIdLessThanOrEqualTo(Integer value) {
-            addCriterion("question_id <=", value, "questionId");
-            return (Criteria) this;
-        }
-
-        public Criteria andQuestionIdIn(List<Integer> values) {
-            addCriterion("question_id in", values, "questionId");
-            return (Criteria) this;
-        }
-
-        public Criteria andQuestionIdNotIn(List<Integer> values) {
-            addCriterion("question_id not in", values, "questionId");
-            return (Criteria) this;
-        }
-
-        public Criteria andQuestionIdBetween(Integer value1, Integer value2) {
-            addCriterion("question_id between", value1, value2, "questionId");
-            return (Criteria) this;
-        }
-
-        public Criteria andQuestionIdNotBetween(Integer value1, Integer value2) {
-            addCriterion("question_id not between", value1, value2, "questionId");
-            return (Criteria) this;
-        }
-
         public Criteria andStudentAnswerIsNull() {
             addCriterion("student_answer is null");
             return (Criteria) this;

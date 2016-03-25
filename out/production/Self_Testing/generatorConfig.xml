@@ -42,7 +42,6 @@
         </javaClientGenerator>
         <!-- 指定数据库表 -->
         <table tableName="answer"></table>
-        <table tableName="mark"></table>
         <table tableName="messages"></table>
         <table tableName="question_bank"></table>
         <table tableName="student"></table>

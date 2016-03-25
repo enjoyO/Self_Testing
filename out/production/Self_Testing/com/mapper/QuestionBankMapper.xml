@@ -1,35 +1,35 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.mapper.QuestionBankMapper" >
-  <resultMap id="BaseResultMap" type="com.models.QuestionBank" >
-    <id column="id" property="id" jdbcType="INTEGER" />
-    <result column="subject_id" property="subjectId" jdbcType="INTEGER" />
-    <result column="content" property="content" jdbcType="VARCHAR" />
-    <result column="option_one" property="optionOne" jdbcType="VARCHAR" />
-    <result column="option_two" property="optionTwo" jdbcType="VARCHAR" />
-    <result column="option_three" property="optionThree" jdbcType="VARCHAR" />
-    <result column="option_four" property="optionFour" jdbcType="VARCHAR" />
-    <result column="answer" property="answer" jdbcType="VARCHAR" />
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.QuestionBankMapper">
+  <resultMap id="BaseResultMap" type="com.models.QuestionBank">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="subject_id" jdbcType="INTEGER" property="subjectId" />
+    <result column="content" jdbcType="VARCHAR" property="content" />
+    <result column="option_one" jdbcType="VARCHAR" property="optionOne" />
+    <result column="option_two" jdbcType="VARCHAR" property="optionTwo" />
+    <result column="option_three" jdbcType="VARCHAR" property="optionThree" />
+    <result column="option_four" jdbcType="VARCHAR" property="optionFour" />
+    <result column="answer" jdbcType="VARCHAR" property="answer" />
   </resultMap>
-  <sql id="Example_Where_Clause" >
-    <where >
-      <foreach collection="oredCriteria" item="criteria" separator="or" >
-        <if test="criteria.valid" >
-          <trim prefix="(" suffix=")" prefixOverrides="and" >
-            <foreach collection="criteria.criteria" item="criterion" >
-              <choose >
-                <when test="criterion.noValue" >
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
                   and ${criterion.condition}
                 </when>
-                <when test="criterion.singleValue" >
+                <when test="criterion.singleValue">
                   and ${criterion.condition} #{criterion.value}
                 </when>
-                <when test="criterion.betweenValue" >
+                <when test="criterion.betweenValue">
                   and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
                 </when>
-                <when test="criterion.listValue" >
+                <when test="criterion.listValue">
                   and ${criterion.condition}
-                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
                     #{listItem}
                   </foreach>
                 </when>
@@ -40,25 +40,25 @@
       </foreach>
     </where>
   </sql>
-  <sql id="Update_By_Example_Where_Clause" >
-    <where >
-      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
-        <if test="criteria.valid" >
-          <trim prefix="(" suffix=")" prefixOverrides="and" >
-            <foreach collection="criteria.criteria" item="criterion" >
-              <choose >
-                <when test="criterion.noValue" >
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
                   and ${criterion.condition}
                 </when>
-                <when test="criterion.singleValue" >
+                <when test="criterion.singleValue">
                   and ${criterion.condition} #{criterion.value}
                 </when>
-                <when test="criterion.betweenValue" >
+                <when test="criterion.betweenValue">
                   and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
                 </when>
-                <when test="criterion.listValue" >
+                <when test="criterion.listValue">
                   and ${criterion.condition}
-                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
                     #{listItem}
                   </foreach>
                 </when>
@@ -69,40 +69,40 @@
       </foreach>
     </where>
   </sql>
-  <sql id="Base_Column_List" >
+  <sql id="Base_Column_List">
     id, subject_id, content, option_one, option_two, option_three, option_four, answer
   </sql>
-  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.models.QuestionBankExample" >
+  <select id="selectByExample" parameterType="com.models.QuestionBankExample" resultMap="BaseResultMap">
     select
-    <if test="distinct" >
+    <if test="distinct">
       distinct
     </if>
     <include refid="Base_Column_List" />
     from question_bank
-    <if test="_parameter != null" >
+    <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
-    <if test="orderByClause != null" >
+    <if test="orderByClause != null">
       order by ${orderByClause}
     </if>
   </select>
-  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
     from question_bank
     where id = #{id,jdbcType=INTEGER}
   </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from question_bank
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <delete id="deleteByExample" parameterType="com.models.QuestionBankExample" >
+  <delete id="deleteByExample" parameterType="com.models.QuestionBankExample">
     delete from question_bank
-    <if test="_parameter != null" >
+    <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.models.QuestionBank" >
+  <insert id="insert" parameterType="com.models.QuestionBank">
     insert into question_bank (id, subject_id, content, 
       option_one, option_two, option_three, 
       option_four, answer)
@@ -110,100 +110,100 @@
       #{optionOne,jdbcType=VARCHAR}, #{optionTwo,jdbcType=VARCHAR}, #{optionThree,jdbcType=VARCHAR}, 
       #{optionFour,jdbcType=VARCHAR}, #{answer,jdbcType=VARCHAR})
   </insert>
-  <insert id="insertSelective" parameterType="com.models.QuestionBank" >
+  <insert id="insertSelective" parameterType="com.models.QuestionBank">
     insert into question_bank
-    <trim prefix="(" suffix=")" suffixOverrides="," >
-      <if test="id != null" >
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
         id,
       </if>
-      <if test="subjectId != null" >
+      <if test="subjectId != null">
         subject_id,
       </if>
-      <if test="content != null" >
+      <if test="content != null">
         content,
       </if>
-      <if test="optionOne != null" >
+      <if test="optionOne != null">
         option_one,
       </if>
-      <if test="optionTwo != null" >
+      <if test="optionTwo != null">
         option_two,
       </if>
-      <if test="optionThree != null" >
+      <if test="optionThree != null">
         option_three,
       </if>
-      <if test="optionFour != null" >
+      <if test="optionFour != null">
         option_four,
       </if>
-      <if test="answer != null" >
+      <if test="answer != null">
         answer,
       </if>
     </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides="," >
-      <if test="id != null" >
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
         #{id,jdbcType=INTEGER},
       </if>
-      <if test="subjectId != null" >
+      <if test="subjectId != null">
         #{subjectId,jdbcType=INTEGER},
       </if>
-      <if test="content != null" >
+      <if test="content != null">
         #{content,jdbcType=VARCHAR},
       </if>
-      <if test="optionOne != null" >
+      <if test="optionOne != null">
         #{optionOne,jdbcType=VARCHAR},
       </if>
-      <if test="optionTwo != null" >
+      <if test="optionTwo != null">
         #{optionTwo,jdbcType=VARCHAR},
       </if>
-      <if test="optionThree != null" >
+      <if test="optionThree != null">
         #{optionThree,jdbcType=VARCHAR},
       </if>
-      <if test="optionFour != null" >
+      <if test="optionFour != null">
         #{optionFour,jdbcType=VARCHAR},
       </if>
-      <if test="answer != null" >
+      <if test="answer != null">
         #{answer,jdbcType=VARCHAR},
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="com.models.QuestionBankExample" resultType="java.lang.Integer" >
+  <select id="countByExample" parameterType="com.models.QuestionBankExample" resultType="java.lang.Integer">
     select count(*) from question_bank
-    <if test="_parameter != null" >
+    <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </select>
-  <update id="updateByExampleSelective" parameterType="map" >
+  <update id="updateByExampleSelective" parameterType="map">
     update question_bank
-    <set >
-      <if test="record.id != null" >
+    <set>
+      <if test="record.id != null">
         id = #{record.id,jdbcType=INTEGER},
       </if>
-      <if test="record.subjectId != null" >
+      <if test="record.subjectId != null">
         subject_id = #{record.subjectId,jdbcType=INTEGER},
       </if>
-      <if test="record.content != null" >
+      <if test="record.content != null">
         content = #{record.content,jdbcType=VARCHAR},
       </if>
-      <if test="record.optionOne != null" >
+      <if test="record.optionOne != null">
         option_one = #{record.optionOne,jdbcType=VARCHAR},
       </if>
-      <if test="record.optionTwo != null" >
+      <if test="record.optionTwo != null">
         option_two = #{record.optionTwo,jdbcType=VARCHAR},
       </if>
-      <if test="record.optionThree != null" >
+      <if test="record.optionThree != null">
         option_three = #{record.optionThree,jdbcType=VARCHAR},
       </if>
-      <if test="record.optionFour != null" >
+      <if test="record.optionFour != null">
         option_four = #{record.optionFour,jdbcType=VARCHAR},
       </if>
-      <if test="record.answer != null" >
+      <if test="record.answer != null">
         answer = #{record.answer,jdbcType=VARCHAR},
       </if>
     </set>
-    <if test="_parameter != null" >
+    <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByExample" parameterType="map" >
+  <update id="updateByExample" parameterType="map">
     update question_bank
     set id = #{record.id,jdbcType=INTEGER},
       subject_id = #{record.subjectId,jdbcType=INTEGER},
@@ -213,38 +213,292 @@
       option_three = #{record.optionThree,jdbcType=VARCHAR},
       option_four = #{record.optionFour,jdbcType=VARCHAR},
       answer = #{record.answer,jdbcType=VARCHAR}
-    <if test="_parameter != null" >
+    <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByPrimaryKeySelective" parameterType="com.models.QuestionBank" >
+  <update id="updateByPrimaryKeySelective" parameterType="com.models.QuestionBank">
     update question_bank
-    <set >
-      <if test="subjectId != null" >
+    <set>
+      <if test="subjectId != null">
         subject_id = #{subjectId,jdbcType=INTEGER},
       </if>
-      <if test="content != null" >
+      <if test="content != null">
         content = #{content,jdbcType=VARCHAR},
       </if>
-      <if test="optionOne != null" >
+      <if test="optionOne != null">
         option_one = #{optionOne,jdbcType=VARCHAR},
       </if>
-      <if test="optionTwo != null" >
+      <if test="optionTwo != null">
         option_two = #{optionTwo,jdbcType=VARCHAR},
       </if>
-      <if test="optionThree != null" >
+      <if test="optionThree != null">
         option_three = #{optionThree,jdbcType=VARCHAR},
       </if>
-      <if test="optionFour != null" >
+      <if test="optionFour != null">
         option_four = #{optionFour,jdbcType=VARCHAR},
       </if>
-      <if test="answer != null" >
+      <if test="answer != null">
         answer = #{answer,jdbcType=VARCHAR},
       </if>
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.models.QuestionBank" >
+  <update id="updateByPrimaryKey" parameterType="com.models.QuestionBank">
+    update question_bank
+    set subject_id = #{subjectId,jdbcType=INTEGER},
+      content = #{content,jdbcType=VARCHAR},
+      option_one = #{optionOne,jdbcType=VARCHAR},
+      option_two = #{optionTwo,jdbcType=VARCHAR},
+      option_three = #{optionThree,jdbcType=VARCHAR},
+      option_four = #{optionFour,jdbcType=VARCHAR},
+      answer = #{answer,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <resultMap id="BaseResultMap" type="com.models.QuestionBank">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="subject_id" jdbcType="INTEGER" property="subjectId" />
+    <result column="content" jdbcType="VARCHAR" property="content" />
+    <result column="option_one" jdbcType="VARCHAR" property="optionOne" />
+    <result column="option_two" jdbcType="VARCHAR" property="optionTwo" />
+    <result column="option_three" jdbcType="VARCHAR" property="optionThree" />
+    <result column="option_four" jdbcType="VARCHAR" property="optionFour" />
+    <result column="answer" jdbcType="VARCHAR" property="answer" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    id, subject_id, content, option_one, option_two, option_three, option_four, answer
+  </sql>
+  <select id="selectByExample" parameterType="com.models.QuestionBankExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from question_bank
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from question_bank
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from question_bank
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.models.QuestionBankExample">
+    delete from question_bank
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.models.QuestionBank">
+    insert into question_bank (id, subject_id, content, 
+      option_one, option_two, option_three, 
+      option_four, answer)
+    values (#{id,jdbcType=INTEGER}, #{subjectId,jdbcType=INTEGER}, #{content,jdbcType=VARCHAR}, 
+      #{optionOne,jdbcType=VARCHAR}, #{optionTwo,jdbcType=VARCHAR}, #{optionThree,jdbcType=VARCHAR}, 
+      #{optionFour,jdbcType=VARCHAR}, #{answer,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.models.QuestionBank">
+    insert into question_bank
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="subjectId != null">
+        subject_id,
+      </if>
+      <if test="content != null">
+        content,
+      </if>
+      <if test="optionOne != null">
+        option_one,
+      </if>
+      <if test="optionTwo != null">
+        option_two,
+      </if>
+      <if test="optionThree != null">
+        option_three,
+      </if>
+      <if test="optionFour != null">
+        option_four,
+      </if>
+      <if test="answer != null">
+        answer,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="subjectId != null">
+        #{subjectId,jdbcType=INTEGER},
+      </if>
+      <if test="content != null">
+        #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="optionOne != null">
+        #{optionOne,jdbcType=VARCHAR},
+      </if>
+      <if test="optionTwo != null">
+        #{optionTwo,jdbcType=VARCHAR},
+      </if>
+      <if test="optionThree != null">
+        #{optionThree,jdbcType=VARCHAR},
+      </if>
+      <if test="optionFour != null">
+        #{optionFour,jdbcType=VARCHAR},
+      </if>
+      <if test="answer != null">
+        #{answer,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.models.QuestionBankExample" resultType="java.lang.Integer">
+    select count(*) from question_bank
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update question_bank
+    <set>
+      <if test="record.id != null">
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.subjectId != null">
+        subject_id = #{record.subjectId,jdbcType=INTEGER},
+      </if>
+      <if test="record.content != null">
+        content = #{record.content,jdbcType=VARCHAR},
+      </if>
+      <if test="record.optionOne != null">
+        option_one = #{record.optionOne,jdbcType=VARCHAR},
+      </if>
+      <if test="record.optionTwo != null">
+        option_two = #{record.optionTwo,jdbcType=VARCHAR},
+      </if>
+      <if test="record.optionThree != null">
+        option_three = #{record.optionThree,jdbcType=VARCHAR},
+      </if>
+      <if test="record.optionFour != null">
+        option_four = #{record.optionFour,jdbcType=VARCHAR},
+      </if>
+      <if test="record.answer != null">
+        answer = #{record.answer,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update question_bank
+    set id = #{record.id,jdbcType=INTEGER},
+      subject_id = #{record.subjectId,jdbcType=INTEGER},
+      content = #{record.content,jdbcType=VARCHAR},
+      option_one = #{record.optionOne,jdbcType=VARCHAR},
+      option_two = #{record.optionTwo,jdbcType=VARCHAR},
+      option_three = #{record.optionThree,jdbcType=VARCHAR},
+      option_four = #{record.optionFour,jdbcType=VARCHAR},
+      answer = #{record.answer,jdbcType=VARCHAR}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.models.QuestionBank">
+    update question_bank
+    <set>
+      <if test="subjectId != null">
+        subject_id = #{subjectId,jdbcType=INTEGER},
+      </if>
+      <if test="content != null">
+        content = #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="optionOne != null">
+        option_one = #{optionOne,jdbcType=VARCHAR},
+      </if>
+      <if test="optionTwo != null">
+        option_two = #{optionTwo,jdbcType=VARCHAR},
+      </if>
+      <if test="optionThree != null">
+        option_three = #{optionThree,jdbcType=VARCHAR},
+      </if>
+      <if test="optionFour != null">
+        option_four = #{optionFour,jdbcType=VARCHAR},
+      </if>
+      <if test="answer != null">
+        answer = #{answer,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.models.QuestionBank">
     update question_bank
     set subject_id = #{subjectId,jdbcType=INTEGER},
       content = #{content,jdbcType=VARCHAR},

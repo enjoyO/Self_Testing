@@ -60,11 +60,6 @@
         <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
     </bean>
 
-    <bean id="markMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
-        <property name="mapperInterface" value="com.mapper.MarkMapper"/>
-        <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
-    </bean>
-
     <bean id="messagesMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
         <property name="mapperInterface" value="com.mapper.MessagesMapper"/>
         <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
@@ -96,7 +91,6 @@
     </bean>
 
     <bean id="answerService" class="com.service.AnswerService" p:answerMapper-ref="answerMapper"/>
-    <bean id="markService" class="com.service.MarkService" p:markMapper-ref="markMapper"/>
     <bean id="messagesService" class="com.service.MessagesService" p:messagesMapper-ref="messagesMapper"/>
     <bean id="questionBankService" class="com.service.QuestionBankService" p:questionBankMapper-ref="questionBankMapper"/>
     <bean id="studentService" class="com.service.StudentService" p:studentMapper-ref="studentMapper"/>
@@ -123,7 +117,6 @@
     </tx:advice>
     <aop:config>
         <aop:pointcut id="myPointcut" expression="bean(answerService)||
-                                                  bean(markService)||
                                                   bean(messagesService)||
                                                   bean(questionBankService)||
                                                   bean(studentService)||
