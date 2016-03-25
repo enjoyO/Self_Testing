@@ -9,6 +9,8 @@ public class Messages {
 
     private String reply;
 
+    private String times;
+
     public Integer getId() {
         return id;
     }
@@ -39,5 +41,13 @@ public class Messages {
 
     public void setReply(String reply) {
         this.reply = reply == null ? null : reply.trim();
+    }
+
+    public String getTimes() {
+        return times;
+    }
+
+    public void setTimes(String times) {
+        this.times = times == null ? null : times.trim();
     }
 }

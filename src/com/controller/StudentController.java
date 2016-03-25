@@ -43,9 +43,8 @@ public class StudentController {
     }
 
     @RequestMapping("/deleteStudent")
-    public String deleteStudent(@RequestParam(value = "id") int id){
+    public void deleteStudent(@RequestParam(value = "id") int id){
         studentService.deleteStudent(id);
-        return "test.jsp";
     }
 
     @RequestMapping("/modifyStudent")

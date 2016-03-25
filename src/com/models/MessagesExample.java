@@ -363,6 +363,76 @@ public class MessagesExample {
             addCriterion("reply not between", value1, value2, "reply");
             return (Criteria) this;
         }
+
+        public Criteria andTimesIsNull() {
+            addCriterion("times is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andTimesIsNotNull() {
+            addCriterion("times is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andTimesEqualTo(String value) {
+            addCriterion("times =", value, "times");
+            return (Criteria) this;
+        }
+
+        public Criteria andTimesNotEqualTo(String value) {
+            addCriterion("times <>", value, "times");
+            return (Criteria) this;
+        }
+
+        public Criteria andTimesGreaterThan(String value) {
+            addCriterion("times >", value, "times");
+            return (Criteria) this;
+        }
+
+        public Criteria andTimesGreaterThanOrEqualTo(String value) {
+            addCriterion("times >=", value, "times");
+            return (Criteria) this;
+        }
+
+        public Criteria andTimesLessThan(String value) {
+            addCriterion("times <", value, "times");
+            return (Criteria) this;
+        }
+
+        public Criteria andTimesLessThanOrEqualTo(String value) {
+            addCriterion("times <=", value, "times");
+            return (Criteria) this;
+        }
+
+        public Criteria andTimesLike(String value) {
+            addCriterion("times like", value, "times");
+            return (Criteria) this;
+        }
+
+        public Criteria andTimesNotLike(String value) {
+            addCriterion("times not like", value, "times");
+            return (Criteria) this;
+        }
+
+        public Criteria andTimesIn(List<String> values) {
+            addCriterion("times in", values, "times");
+            return (Criteria) this;
+        }
+
+        public Criteria andTimesNotIn(List<String> values) {
+            addCriterion("times not in", values, "times");
+            return (Criteria) this;
+        }
+
+        public Criteria andTimesBetween(String value1, String value2) {
+            addCriterion("times between", value1, value2, "times");
+            return (Criteria) this;
+        }
+
+        public Criteria andTimesNotBetween(String value1, String value2) {
+            addCriterion("times not between", value1, value2, "times");
+            return (Criteria) this;
+        }
     }
 
     public static class Criteria extends GeneratedCriteria {
