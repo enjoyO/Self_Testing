@@ -56,4 +56,11 @@ public class MessagesController {
         messagesService.reply(id,content);
         return "test.jsp";
     }
+
+    @RequestMapping("/getAllMessages")
+    public String getAllMessages(HttpServletRequest request){
+        List<Messages> list = messagesService.getAllMessages();
+        request.setAttribute("allMessages",list);
+        return "test.jsp";
+    }
 }

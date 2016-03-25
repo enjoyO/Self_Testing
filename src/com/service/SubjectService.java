@@ -41,4 +41,12 @@ public class SubjectService {
         List<Subject> list = subjectMapper.selectByExample(subjectExample);
         return list;
     }
+
+    public List<Subject> getAllSubjects(){
+        SubjectExample subjectExample = new SubjectExample();
+        SubjectExample.Criteria criteria =subjectExample.createCriteria();
+        criteria.andIdIsNotNull();
+        List<Subject> list = subjectMapper.selectByExample(subjectExample);
+        return list;
+    }
 }

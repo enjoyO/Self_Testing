@@ -76,4 +76,11 @@ public class StudentController {
         request.setAttribute("student",student);
         return "test.jsp";
     }
+
+    @RequestMapping("/getAllStudents")
+    public String getAllStudents(HttpServletRequest request){
+        List<Student> list = studentService.getAllStudents();
+        request.setAttribute("allStudents",list);
+        return "test.jsp";
+    }
 }

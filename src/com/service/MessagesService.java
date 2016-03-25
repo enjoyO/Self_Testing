@@ -42,4 +42,12 @@ public class MessagesService {
         Messages messages = this.getMessage(id);
         messages.setReply(content);
     }
+
+    public List<Messages> getAllMessages(){
+        MessagesExample messagesExample = new MessagesExample();
+        MessagesExample.Criteria criteria = messagesExample.createCriteria();
+        criteria.andIdIsNotNull();
+        List<Messages> list = messagesMapper.selectByExample(messagesExample);
+        return list;
+    }
 }

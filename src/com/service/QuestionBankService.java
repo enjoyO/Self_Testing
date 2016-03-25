@@ -41,4 +41,12 @@ public class QuestionBankService {
         List<QuestionBank> list = questionBankMapper.selectByExample(questionBankExample);
         return list;
     }
+
+    public List<QuestionBank> getAllQuestions(){
+        QuestionBankExample questionBankExample = new QuestionBankExample();
+        QuestionBankExample.Criteria criteria = questionBankExample.createCriteria();
+        criteria.andIdIsNotNull();
+        List<QuestionBank> list = questionBankMapper.selectByExample(questionBankExample);
+        return list;
+    }
 }

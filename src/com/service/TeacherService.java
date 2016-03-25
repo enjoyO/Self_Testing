@@ -41,4 +41,12 @@ public class TeacherService {
         List<Teacher> list = teacherMapper.selectByExample(teacherExample);
         return list;
     }
+
+    public List<Teacher> getAllTeacher(){
+        TeacherExample teacherExample = new TeacherExample();
+        TeacherExample.Criteria criteria = teacherExample.createCriteria();
+        criteria.andIdIsNotNull();
+        List<Teacher> list = teacherMapper.selectByExample(teacherExample);
+        return list;
+    }
 }

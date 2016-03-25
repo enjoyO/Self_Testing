@@ -59,4 +59,11 @@ public class TestPaperController {
         request.setAttribute("papers",list);
         return "test.jsp";
     }
+
+    @RequestMapping("/getAllPapers")
+    public String getAllPapers(HttpServletRequest request){
+        List<TestPaper> list = testPaperService.getAllPapers();
+        request.setAttribute("allPapers",list);
+        return "test.jsp";
+    }
 }

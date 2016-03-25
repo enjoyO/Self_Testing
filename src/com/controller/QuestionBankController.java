@@ -53,4 +53,11 @@ public class QuestionBankController {
         request.setAttribute("questions",list);
         return "test.jsp";
     }
+
+    @RequestMapping("/getAllQuestions")
+    public String getAllQuestions(HttpServletRequest request){
+        List<QuestionBank> list = questionBankService.getAllQuestions();
+        request.setAttribute("allQuestions",list);
+        return "test.jsp";
+    }
 }

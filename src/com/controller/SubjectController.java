@@ -53,4 +53,11 @@ public class SubjectController {
         request.setAttribute("subjects",list);
         return "test.jsp";
     }
+
+    @RequestMapping("/getAllSubject")
+    public String getAllSubject(HttpServletRequest request){
+        List<Subject> list = subjectService.getAllSubjects();
+        request.setAttribute("allSubjects",list);
+        return "test.jsp";
+    }
 }

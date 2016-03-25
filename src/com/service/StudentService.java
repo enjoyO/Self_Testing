@@ -58,4 +58,12 @@ public class StudentService {
         Student student = studentMapper.selectByPrimaryKey(id);
         return student;
     }
+
+    public List<Student> getAllStudents(){
+        StudentExample studentExample = new StudentExample();
+        StudentExample.Criteria criteria = studentExample.createCriteria();
+        criteria.andIdIsNotNull();
+        List<Student> list = studentMapper.selectByExample(studentExample);
+        return list;
+    }
 }

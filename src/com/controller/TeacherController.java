@@ -53,4 +53,11 @@ public class TeacherController {
         request.setAttribute("teachers",list);
         return "test.jsp";
     }
+
+    @RequestMapping("/getAllTeachers")
+    public String getAllTeachers(HttpServletRequest request){
+        List<Teacher> list = teacherService.getAllTeacher();
+        request.setAttribute("allTeachers",list);
+        return "test.jsp";
+    }
 }

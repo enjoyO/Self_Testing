@@ -1,6 +1,7 @@
 package com.service;
 
 import com.mapper.TestPaperMapper;
+import com.models.Teacher;
 import com.models.TestPaper;
 import com.models.TestPaperExample;
 
@@ -38,6 +39,14 @@ public class TestPaperService {
         TestPaperExample testPaperExample = new TestPaperExample();
         TestPaperExample.Criteria criteria = testPaperExample.createCriteria();
         criteria.andTestNameLike(paperName);
+        List<TestPaper> list = testPaperMapper.selectByExample(testPaperExample);
+        return list;
+    }
+
+    public List<TestPaper> getAllPapers(){
+        TestPaperExample testPaperExample = new TestPaperExample();
+        TestPaperExample.Criteria criteria = testPaperExample.createCriteria();
+        criteria.andIdIsNotNull();
         List<TestPaper> list = testPaperMapper.selectByExample(testPaperExample);
         return list;
     }
