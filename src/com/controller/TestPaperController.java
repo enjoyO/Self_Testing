@@ -1,17 +1,29 @@
 package com.controller;
 
+import com.models.QuestionBank;
 import com.models.TestPaper;
+import com.service.QuestionBankService;
 import com.service.TestPaperService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.ArrayList;
 import java.util.List;
 
 @Controller
 public class TestPaperController {
     private TestPaperService testPaperService;
+    private QuestionBankService questionBankService;
+
+    public QuestionBankService getQuestionBankService() {
+        return questionBankService;
+    }
+
+    public void setQuestionBankService(QuestionBankService questionBankService) {
+        this.questionBankService = questionBankService;
+    }
 
     public TestPaperService getTestPaperService() {
         return testPaperService;
@@ -65,5 +77,25 @@ public class TestPaperController {
         List<TestPaper> list = testPaperService.getAllPapers();
         request.setAttribute("allPapers",list);
         return "test.jsp";
+    }
+
+    @RequestMapping("/getPaper")
+    public String getPaper(HttpServletRequest request){
+        int id = 1;
+        TestPaper paper = testPaperService.modifyPaper(id);
+        String questionIds = paper.getQuestionId();
+        String[] questionId = questionIds.split(",");
+        int[] questionIdInt = new int[questionId.length];
+        for (int k = 0; k < questionId.length; k++) {
+            questionIdInt[k] = Integer.parseInt(questionId[k]);
+        }
+        List<QuestionBank> list = new ArrayList<>();
+
+        for(int i = 0;i<questionIdInt.length;i++){
+            QuestionBank questionBank = questionBankService.modifyQuestion(questionIdInt[i]);
+            list.add(questionBank);
+        }
+        request.setAttribute("questions",list);
+        return "seller-test.jsp";
     }
 }

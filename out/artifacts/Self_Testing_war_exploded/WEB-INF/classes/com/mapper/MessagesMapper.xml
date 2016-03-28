@@ -6,6 +6,7 @@
     <result column="student_id" property="studentId" jdbcType="INTEGER" />
     <result column="message" property="message" jdbcType="VARCHAR" />
     <result column="reply" property="reply" jdbcType="VARCHAR" />
+    <result column="times" property="times" jdbcType="VARCHAR" />
   </resultMap>
   <sql id="Example_Where_Clause" >
     <where >
@@ -66,7 +67,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List" >
-    id, student_id, message, reply
+    id, student_id, message, reply, times
   </sql>
   <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.models.MessagesExample" >
     select
@@ -100,9 +101,9 @@
   </delete>
   <insert id="insert" parameterType="com.models.Messages" >
     insert into messages (id, student_id, message, 
-      reply)
+      reply, times)
     values (#{id,jdbcType=INTEGER}, #{studentId,jdbcType=INTEGER}, #{message,jdbcType=VARCHAR}, 
-      #{reply,jdbcType=VARCHAR})
+      #{reply,jdbcType=VARCHAR}, #{times,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.models.Messages" >
     insert into messages
@@ -119,6 +120,9 @@
       <if test="reply != null" >
         reply,
       </if>
+      <if test="times != null" >
+        times,
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides="," >
       <if test="id != null" >
@@ -132,6 +136,9 @@
       </if>
       <if test="reply != null" >
         #{reply,jdbcType=VARCHAR},
+      </if>
+      <if test="times != null" >
+        #{times,jdbcType=VARCHAR},
       </if>
     </trim>
   </insert>
@@ -156,6 +163,9 @@
       <if test="record.reply != null" >
         reply = #{record.reply,jdbcType=VARCHAR},
       </if>
+      <if test="record.times != null" >
+        times = #{record.times,jdbcType=VARCHAR},
+      </if>
     </set>
     <if test="_parameter != null" >
       <include refid="Update_By_Example_Where_Clause" />
@@ -166,7 +176,8 @@
     set id = #{record.id,jdbcType=INTEGER},
       student_id = #{record.studentId,jdbcType=INTEGER},
       message = #{record.message,jdbcType=VARCHAR},
-      reply = #{record.reply,jdbcType=VARCHAR}
+      reply = #{record.reply,jdbcType=VARCHAR},
+      times = #{record.times,jdbcType=VARCHAR}
     <if test="_parameter != null" >
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -183,6 +194,9 @@
       <if test="reply != null" >
         reply = #{reply,jdbcType=VARCHAR},
       </if>
+      <if test="times != null" >
+        times = #{times,jdbcType=VARCHAR},
+      </if>
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
@@ -190,7 +204,8 @@
     update messages
     set student_id = #{studentId,jdbcType=INTEGER},
       message = #{message,jdbcType=VARCHAR},
-      reply = #{reply,jdbcType=VARCHAR}
+      reply = #{reply,jdbcType=VARCHAR},
+      times = #{times,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
 </mapper>

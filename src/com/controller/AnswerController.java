@@ -6,11 +6,13 @@ import com.models.TestPaper;
 import com.service.AnswerService;
 import com.service.QuestionBankService;
 import com.service.TestPaperService;
+import com.sun.deploy.net.HttpResponse;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
 @Controller
@@ -43,8 +45,8 @@ public class AnswerController {
         this.answerService = answerService;
     }
 
-    @RequestMapping("addAnswer")
-    public String addAnswer(Answer answer, HttpServletRequest request) {
+    @RequestMapping("/addAnswer")
+    public void addAnswer(Answer answer, HttpServletRequest request, HttpServletResponse response) throws Exception{
         int paperId = answer.getPaperId();
         TestPaper paper = testPaperService.modifyPaper(paperId);
         String questionIds = paper.getQuestionId();
@@ -78,8 +80,10 @@ public class AnswerController {
         }
         answer.setScore(score);
         request.setAttribute("score", score);
+        response.setContentType("text");
+        response.getWriter().print(score);
         answerService.addAnswer(answer);
-        return "test.jsp";
+//        return "test.jsp";
     }
 
     @RequestMapping("/findByStuId")

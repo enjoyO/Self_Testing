@@ -5,7 +5,6 @@
     <id column="id" property="id" jdbcType="INTEGER" />
     <result column="student_id" property="studentId" jdbcType="INTEGER" />
     <result column="paper_id" property="paperId" jdbcType="INTEGER" />
-    <result column="question_id" property="questionId" jdbcType="INTEGER" />
     <result column="student_answer" property="studentAnswer" jdbcType="VARCHAR" />
     <result column="score" property="score" jdbcType="INTEGER" />
   </resultMap>
@@ -68,7 +67,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List" >
-    id, student_id, paper_id, question_id, student_answer, score
+    id, student_id, paper_id, student_answer, score
   </sql>
   <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.models.AnswerExample" >
     select
@@ -102,11 +101,9 @@
   </delete>
   <insert id="insert" parameterType="com.models.Answer" >
     insert into answer (id, student_id, paper_id, 
-      question_id, student_answer, score
-      )
+      student_answer, score)
     values (#{id,jdbcType=INTEGER}, #{studentId,jdbcType=INTEGER}, #{paperId,jdbcType=INTEGER}, 
-      #{questionId,jdbcType=INTEGER}, #{studentAnswer,jdbcType=VARCHAR}, #{score,jdbcType=INTEGER}
-      )
+      #{studentAnswer,jdbcType=VARCHAR}, #{score,jdbcType=INTEGER})
   </insert>
   <insert id="insertSelective" parameterType="com.models.Answer" >
     insert into answer
@@ -119,9 +116,6 @@
       </if>
       <if test="paperId != null" >
         paper_id,
-      </if>
-      <if test="questionId != null" >
-        question_id,
       </if>
       <if test="studentAnswer != null" >
         student_answer,
@@ -139,9 +133,6 @@
       </if>
       <if test="paperId != null" >
         #{paperId,jdbcType=INTEGER},
-      </if>
-      <if test="questionId != null" >
-        #{questionId,jdbcType=INTEGER},
       </if>
       <if test="studentAnswer != null" >
         #{studentAnswer,jdbcType=VARCHAR},
@@ -169,9 +160,6 @@
       <if test="record.paperId != null" >
         paper_id = #{record.paperId,jdbcType=INTEGER},
       </if>
-      <if test="record.questionId != null" >
-        question_id = #{record.questionId,jdbcType=INTEGER},
-      </if>
       <if test="record.studentAnswer != null" >
         student_answer = #{record.studentAnswer,jdbcType=VARCHAR},
       </if>
@@ -188,7 +176,6 @@
     set id = #{record.id,jdbcType=INTEGER},
       student_id = #{record.studentId,jdbcType=INTEGER},
       paper_id = #{record.paperId,jdbcType=INTEGER},
-      question_id = #{record.questionId,jdbcType=INTEGER},
       student_answer = #{record.studentAnswer,jdbcType=VARCHAR},
       score = #{record.score,jdbcType=INTEGER}
     <if test="_parameter != null" >
@@ -204,9 +191,6 @@
       <if test="paperId != null" >
         paper_id = #{paperId,jdbcType=INTEGER},
       </if>
-      <if test="questionId != null" >
-        question_id = #{questionId,jdbcType=INTEGER},
-      </if>
       <if test="studentAnswer != null" >
         student_answer = #{studentAnswer,jdbcType=VARCHAR},
       </if>
@@ -220,7 +204,6 @@
     update answer
     set student_id = #{studentId,jdbcType=INTEGER},
       paper_id = #{paperId,jdbcType=INTEGER},
-      question_id = #{questionId,jdbcType=INTEGER},
       student_answer = #{studentAnswer,jdbcType=VARCHAR},
       score = #{score,jdbcType=INTEGER}
     where id = #{id,jdbcType=INTEGER}
