@@ -1,0 +1,241 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>计组试题</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/select.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+<script type="text/javascript" src="js/select-ui.min.js"></script>
+<script type="text/javascript" src="editor/kindeditor.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".click5").click(function(){
+  $(".tip5").fadeIn(200);
+  });
+  
+  
+  $(".tiptop a").click(function(){
+  $(".tip5").fadeOut(200);
+});
+
+  $(".sure").click(function(){
+  $(".tip5").fadeOut(100);
+});
+
+  $(".cancel").click(function(){
+  $(".tip5").fadeOut(100);
+});
+
+});
+
+
+
+$(document).ready(function(){
+  $(".click6").click(function(){
+  $(".tip6").fadeIn(200);
+  });
+  
+  
+  $(".tiptop a").click(function(){
+  $(".tip6").fadeOut(200);
+});
+
+  $(".sure").click(function(){
+  $(".tip6").fadeOut(100);
+});
+
+  $(".cancel").click(function(){
+  $(".tip6").fadeOut(100);
+});
+
+});
+
+
+</script>
+</head>
+
+<body>
+
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="#">自测管理</a></li>
+    <li><a href="tab （试题管理）.jsp">自测试题</a></li>
+    <li><a href="#">计算机组成原理期中试题</a></li>
+    </ul>
+    </div>
+    
+
+    
+
+    
+    
+    <ul class="classlist">
+    
+    <li>
+    <div class="lright2">
+    <h2>1:用以指定待执行指令所在地址的是什么</h2>
+    <form action="">
+    <input type="radio" name="answer"  />
+    <label for="">A．指令寄存器</label>
+    <br />
+    <input type="radio" name="answer" /> 
+    <label for="">B．数据计数器</label>
+    <br />
+    <input type="radio" name="answer"  /> 
+    <label for="">C．程序计数器</label>
+    <br />
+    <input type="radio" name="answer"  /> 
+    <label for="">D．累加器</label>
+    <p><a href="#"  ><span class="click5">修改</span></a>      <a href="#" ><span class="click6">删除</span></a></p>
+
+    </form>
+    </div>
+    </li>
+    
+    <li>
+    <div class="lright2">
+    <h2>2:32位的个人计算机，一个字节由多少位组成</h2>
+    <form action="">
+    <input type="radio" name="answer"  />
+    <label for="">A．4</label>
+    <br />
+    <input type="radio" name="answer" /> 
+    <label for="">B．8</label>
+    <br />
+    <input type="radio" name="answer"  /> 
+    <label for="">C．16</label>
+    <br />
+    <input type="radio" name="answer"  /> 
+    <label for="">D．32</label>
+    <p><a href="#"  ><span class="click5">修改</span></a>      <a href="#" ><span class="click6">删除</span></a></p>
+    </form>
+    </div>
+    </li>
+    
+    <li>
+    <div class="lright2">
+    <h2>3:[X]补=1.00…0，它代表的真值是        </h2>
+    <form action="">
+    <input type="radio" name="answer"  />
+    <label for="">A．-0</label>
+    <br />
+    <input type="radio" name="answer" /> 
+    <label for="">B．-1</label>
+    <br />
+    <input type="radio" name="answer"  /> 
+    <label for="">C．+1</label>
+    <br />
+    <input type="radio" name="answer"  /> 
+    <label for="">D．+0</label>
+    <p><a href="#"  ><span class="click5">修改</span></a>      <a href="#" ><span class="click6">删除</span></a></p>
+    </form>
+    </div>
+    </li>
+    
+    <li>
+    <div class="lright2">
+    <h2>4:寄存器间接寻址方式中，操作数在什么中</h2>
+    <form action="">
+    <input type="radio" name="answer"  />
+    <label for="">A．通用寄存器</label>
+    <br />
+    <input type="radio" name="answer" /> 
+    <label for="">B．堆栈</label>
+    <br />
+    <input type="radio" name="answer"  /> 
+    <label for="">C．主存单元</label>
+    <br />
+    <input type="radio" name="answer"  /> 
+    <label for="">D．透明寄存器</label>
+    <p><a href="#"  ><span class="click5">修改</span></a>      <a href="#" ><span class="click6">删除</span></a></p>
+    </form>
+    </div>
+    </li>
+    
+    
+    
+    </ul>
+    
+    <div class="clear"></div>
+   
+    
+    </div>  
+
+    <div class="tip5">
+        <div class="tiptop"><span>修改试题</span><a></a></div>
+        
+      <div class="tipinfo">
+        <div class="tipright">
+        <div class="kuang"> 题干：<textarea name="" cols="" rows="" class="textinput"></textarea></div>
+        <div class="kuang"> 选项A：<input type="text" class="inputborder1" name="" placeholder="　输入选项A" value=""></div>
+        <div class="kuang"> 选项B：<input type="text" class="inputborder1" id="" name="" placeholder="　输入选项B" value=""></div>
+        <div class="kuang"> 选项C：<input type="text" class="inputborder1" id="" name="" placeholder="　输入选项C" value=""></div>
+        <div class="kuang"> 选项D：<input type="text" class="inputborder1" id="" name="" placeholder="　输入选项D" value=""></div>
+        <li><label>正确答案</label>
+        <cite>
+        <input name="answer" type="radio" value="" />A&nbsp;&nbsp;&nbsp;&nbsp;
+        <input name="answer" type="radio" value="" />B&nbsp;&nbsp;&nbsp;&nbsp;
+        <input name="answer" type="radio" value="" />C&nbsp;&nbsp;&nbsp;&nbsp;
+        <input name="answer" type="radio" value="" />D&nbsp;&nbsp;&nbsp;&nbsp;
+        </cite>
+        </li>
+        </div>
+        </div>
+        
+        <div class="tipbtn2">
+        <input name="" type="button"  class="sure" value="确定" />&nbsp;
+        <input name="" type="button"  class="cancel" value="取消" />
+        </div>
+    
+    </div>
+    
+    
+    
+    
+    </div>
+
+    <div class="tip6">
+        <div class="tiptop"><span>删除试题</span><a></a></div>
+        
+      <div class="tipinfo">
+       
+        <div class="tipright">
+        <p>是否确认对试题的删除 ？</p>
+        <cite>如果是请点击确定按钮 ，否则请点取消。</cite>
+        </div>
+        </div>
+        
+        <div class="tipbtn">
+        <input name="" type="button"  class="sure" value="确定" />&nbsp;
+        <input name="" type="button"  class="cancel" value="取消" />
+        </div>
+    
+    </div>
+    
+    
+    
+    
+    </div>
+ 
+	<script type="text/javascript"> 
+      $("#usual1 ul").idTabs(); 
+    </script>
+    
+    <script type="text/javascript">
+	$('.tablelist tbody tr:odd').addClass('odd');
+	</script>
+    
+    
+    
+    
+    
+    </div>
+
+
+</body>
+
+</html>

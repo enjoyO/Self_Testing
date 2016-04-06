@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.util.List;
 
 @Controller
@@ -19,6 +21,19 @@ public class TeacherController {
 
     public void setTeacherService(TeacherService teacherService) {
         this.teacherService = teacherService;
+    }
+
+    @RequestMapping("/loginTeacher")
+    public void loginTeacher(@RequestParam(value = "username") String username,
+                             @RequestParam(value = "password") String password,
+                             HttpSession session,
+                             HttpServletResponse response) throws Exception{
+        Teacher teacher = teacherService.loginTeacher(username,password);
+        if(teacher==null){
+            response.getWriter().print("wrong");
+        }else{
+            session.setAttribute("admin",teacher);
+        }
     }
 
     @RequestMapping("/addTeacher")

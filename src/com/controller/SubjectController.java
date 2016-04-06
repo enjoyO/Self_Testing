@@ -24,7 +24,7 @@ public class SubjectController {
     @RequestMapping("/addSubject")
     public String addSubject(Subject subject){
         subjectService.addSubject(subject);
-        return "test.jsp";
+        return "/getAllSubject.action";
     }
 
     @RequestMapping("/deleteSubject")
@@ -43,21 +43,28 @@ public class SubjectController {
     @RequestMapping("/updateSubject")
     public String updateSubject(Subject subject){
         subjectService.updateSubject(subject);
-        return "test.jsp";
+        return "/getAllSubject.action";
     }
 
     @RequestMapping("/findSubjects")
     public String findSubjects(@RequestParam(value = "name") String name,
                                HttpServletRequest request){
         List<Subject> list = subjectService.findSubjects(name);
-        request.setAttribute("subjects",list);
-        return "test.jsp";
+        request.setAttribute("allSubjects",list);
+        return "right（课程）.jsp";
     }
 
     @RequestMapping("/getAllSubject")
     public String getAllSubject(HttpServletRequest request){
         List<Subject> list = subjectService.getAllSubjects();
         request.setAttribute("allSubjects",list);
-        return "test.jsp";
+        return "right（课程）.jsp";
+    }
+
+    @RequestMapping("/toPaperMan")
+    public String toPaperMan(HttpServletRequest request){
+        List<Subject> list = subjectService.getAllSubjects();
+        request.setAttribute("allSubjects",list);
+        return "tab （试题管理）.jsp";
     }
 }

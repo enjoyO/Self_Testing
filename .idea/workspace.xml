@@ -2,90 +2,206 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b02fd632-5c73-4438-8a75-93ff629b58b9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/seller-test.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/store.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/base.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/mapper/TestPaperMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/models/Mark.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/models/SubjectExample.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/mapper/TeacherMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/models/TeacherExample.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/mapper/SubjectMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/mapper/MarkMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/mapper/MessagesMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/models/MarkExample$GeneratedCriteria.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/mapper/AnswerMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/models/MarkExample.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/models/QuestionBankExample.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/models/Student.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/mapper/StudentMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/models/TestPaper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/models/AnswerExample.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/mapper/QuestionBankMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/mapper/QuestionBankMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/models/Subject.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/controller/MarkController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/mapper/StudentMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/models/Teacher.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/mapper/MessagesMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/mapper/TestPaperMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/mapper/TeacherMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/service/MarkService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/models/Messages.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/models/MarkExample$Criteria.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/mapper/SubjectMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/models/QuestionBank.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/models/MessagesExample.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/mapper/AnswerMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/models/Answer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/models/MarkExample$Criterion.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/mapper/MarkMapper.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/models/TestPaperExample.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/models/StudentExample.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/models/MessagesExample$Criterion.class" afterPath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/models/MessagesExample$Criterion.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Self_Testing/com/mapper/TeacherMapper.xml" afterPath="$PROJECT_DIR$/out/production/Self_Testing/com/mapper/TeacherMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/generatorConfig.xml" afterPath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/generatorConfig.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/mapper/AnswerMapper.xml" afterPath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/mapper/AnswerMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/mapper/MessagesMapper.xml" afterPath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/mapper/MessagesMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Self_Testing/com/mapper/AnswerMapper.xml" afterPath="$PROJECT_DIR$/out/production/Self_Testing/com/mapper/AnswerMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Self_Testing/com/mapper/TestPaperMapper.xml" afterPath="$PROJECT_DIR$/out/production/Self_Testing/com/mapper/TestPaperMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/controller/AnswerController.class" afterPath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/controller/AnswerController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/models/AnswerExample$GeneratedCriteria.class" afterPath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/models/AnswerExample$GeneratedCriteria.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/service/TestPaperService.class" afterPath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/service/TestPaperService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/service/QuestionBankService.class" afterPath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/service/QuestionBankService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Self_Testing/com/controller/AnswerController.class" afterPath="$PROJECT_DIR$/out/production/Self_Testing/com/controller/AnswerController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/models/AnswerExample$Criteria.class" afterPath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/models/AnswerExample$Criteria.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/service/SubjectService.class" afterPath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/service/SubjectService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/controller/TeacherController.class" afterPath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/controller/TeacherController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/models/AnswerExample$Criterion.class" afterPath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/models/AnswerExample$Criterion.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Self_Testing/com/mapper/QuestionBankMapper.xml" afterPath="$PROJECT_DIR$/out/production/Self_Testing/com/mapper/QuestionBankMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/controller/TestPaperController.java" afterPath="$PROJECT_DIR$/src/com/controller/TestPaperController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/models/MessagesExample$Criteria.class" afterPath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/models/MessagesExample$Criteria.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/models/Answer.class" afterPath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/models/Answer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/controller/MessagesController.class" afterPath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/controller/MessagesController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/controller/SubjectController.class" afterPath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/controller/SubjectController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/controller/TestPaperController.class" afterPath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/controller/TestPaperController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Self_Testing/com/mapper/StudentMapper.xml" afterPath="$PROJECT_DIR$/out/production/Self_Testing/com/mapper/StudentMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/models/MessagesExample$GeneratedCriteria.class" afterPath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/models/MessagesExample$GeneratedCriteria.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Self_Testing/com/controller/TestPaperController.class" afterPath="$PROJECT_DIR$/out/production/Self_Testing/com/controller/TestPaperController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/controller/StudentController.class" afterPath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/controller/StudentController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/models/Messages.class" afterPath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/models/Messages.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/service/MessagesService.class" afterPath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/service/MessagesService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/service/StudentService.class" afterPath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/service/StudentService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/service/AnswerService.class" afterPath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/service/AnswerService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Self_Testing/com/mapper/MessagesMapper.xml" afterPath="$PROJECT_DIR$/out/production/Self_Testing/com/mapper/MessagesMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Self_Testing/com/mapper/SubjectMapper.xml" afterPath="$PROJECT_DIR$/out/production/Self_Testing/com/mapper/SubjectMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/plugins/emoticons/etc_01.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/plugins/emoticons/etc_02.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/plugins/emoticons/etc_03.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/plugins/emoticons/etc_04.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/plugins/emoticons/etc_05.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/plugins/emoticons/etc_06.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/plugins/emoticons/etc_07.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/plugins/emoticons/etc_08.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/plugins/emoticons/etc_09.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/plugins/emoticons/etc_10.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/plugins/emoticons/etc_11.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/plugins/emoticons/etc_12.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/plugins/emoticons/etc_13.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/plugins/emoticons/etc_14.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/plugins/emoticons/etc_15.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/plugins/emoticons/etc_16.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/plugins/emoticons/etc_17.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/plugins/emoticons/etc_18.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/plugins/emoticons/etc_19.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/plugins/emoticons/etc_20.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/plugins/emoticons/etc_21.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/plugins/emoticons/etc_22.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/plugins/emoticons/etc_23.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/plugins/emoticons/etc_24.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/plugins/emoticons/etc_25.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/plugins/emoticons/etc_26.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/plugins/emoticons/etc_27.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/plugins/emoticons/etc_28.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/plugins/emoticons/etc_29.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/plugins/emoticons/etc_30.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/plugins/emoticons/etc_31.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/plugins/emoticons/etc_32.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/plugins/emoticons/etc_33.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/plugins/emoticons/etc_34.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/plugins/emoticons/etc_35.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/plugins/emoticons/etc_36.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/skins/default.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/skins/div.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/skins/dl.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/skins/ol.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/skins/p.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/skins/tinymce.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/skins/ul.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/001.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/002.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/btnbg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/btnbg1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/btnbg2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/buttonbg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/cbg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/clist.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/close.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/close1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/cloud.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/help.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/iadd.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/ibtnbg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/inputbg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/itabbg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/itabbg1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/leftico.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/leftico01.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/leftico02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/leftico03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/leftico04.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/leftline.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/leftmenubg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/lefttop.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/libg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/line.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/line1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/list.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/list1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/list2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/loginbg1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/loginbg2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/loginbg3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/logininfo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/loginlogo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/loginpassword.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/loginsj.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/loginuser.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/mima-icon.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/msg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/navbg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/next.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/pass1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/pass2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/pre.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/px.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/righttop.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/rlist.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/search.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/sj.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/sun.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/t01.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/t02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/t03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/t04.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/t05.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/tbg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/tcbg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/th.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/ticon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/time.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/toolbg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/topbg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/topleft.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/topright.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/ub1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/uew_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/uew_icon_hover.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/ulist.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/user-icon.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/user.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/userbg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/yzmz-icon.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/qq_kf.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/qq_kf_line.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/r_ico_t.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/ask.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/login.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/select.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/kindeditor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/plugins/about.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/plugins/flash.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/plugins/image.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/plugins/link.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/plugins/media.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/plugins/plainpaste.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/plugins/remote_image.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/plugins/wordpaste.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/skins/default.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/skins/editor.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editor/skins/tinymce.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/imglist1 （进入自测）.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/imglist1 （进入试题）.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/imglist1（答题）.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/PIE.htc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/cloud.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/format+zh_CN,default,corechart.I.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/jquery-1.8.3.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/jquery.ba-resize.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/jquery.gvChart-1.0.1.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/jquery.idTabs.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/jsapi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/login.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/select-ui.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/tipswindown.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/left（学生）.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/left（管理员).jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/login.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/main (管理员).jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/main（学生）.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/right（成绩单）.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/right（用户）.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/right（留言管理）.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/right（试卷管理）.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/right（课程）.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/src/jquery.gvChart-1.0.1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/tab （试题管理）.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/tab （试题计组）.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/tab（留言反馈）.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/top.jsp" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/index.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/css/base.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/css/store.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/seller-test.jsp" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/controller/QuestionBankController.class" afterPath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/controller/QuestionBankController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/controller/AnswerController.java" afterPath="$PROJECT_DIR$/src/com/controller/AnswerController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/dispatcher-servlet.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/controller/StudentController.class" afterPath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/controller/StudentController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/controller/SubjectController.class" afterPath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/controller/SubjectController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/controller/TeacherController.class" afterPath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/controller/TeacherController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/service/StudentService.class" afterPath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/service/StudentService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/service/TeacherService.class" afterPath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/service/TeacherService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/utils/GeneratorSqlmap.class" afterPath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/utils/GeneratorSqlmap.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Self_Testing/com/controller/QuestionBankController.class" afterPath="$PROJECT_DIR$/out/production/Self_Testing/com/controller/QuestionBankController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Self_Testing/com/controller/StudentController.class" afterPath="$PROJECT_DIR$/out/production/Self_Testing/com/controller/StudentController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Self_Testing/com/controller/SubjectController.class" afterPath="$PROJECT_DIR$/out/production/Self_Testing/com/controller/SubjectController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Self_Testing/com/controller/TeacherController.class" afterPath="$PROJECT_DIR$/out/production/Self_Testing/com/controller/TeacherController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Self_Testing/com/service/StudentService.class" afterPath="$PROJECT_DIR$/out/production/Self_Testing/com/service/StudentService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Self_Testing/com/service/TeacherService.class" afterPath="$PROJECT_DIR$/out/production/Self_Testing/com/service/TeacherService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/test.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/test.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/controller/QuestionBankController.java" afterPath="$PROJECT_DIR$/src/com/controller/QuestionBankController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/controller/StudentController.java" afterPath="$PROJECT_DIR$/src/com/controller/StudentController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/controller/SubjectController.java" afterPath="$PROJECT_DIR$/src/com/controller/SubjectController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/controller/TeacherController.java" afterPath="$PROJECT_DIR$/src/com/controller/TeacherController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/controller/TestPaperController.java" afterPath="$PROJECT_DIR$/src/com/controller/TestPaperController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/service/StudentService.java" afterPath="$PROJECT_DIR$/src/com/service/StudentService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/service/TeacherService.java" afterPath="$PROJECT_DIR$/src/com/service/TeacherService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/jquery.js" afterPath="$PROJECT_DIR$/web/js/jquery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/test.jsp" afterPath="$PROJECT_DIR$/web/test.jsp" />
     </list>
     <ignored path="Self_Testing.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -108,34 +224,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TestPaperController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/controller/TestPaperController.java">
+      <file leaf-file-name="right（试卷管理）.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/right（试卷管理）.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="96" column="9" selection-start-line="96" selection-start-column="9" selection-end-line="96" selection-end-column="9" />
-              <folding>
-                <element signature="e#640#641#0" expanded="true" />
-                <element signature="e#682#683#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AnswerController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/controller/AnswerController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.03966942">
-              <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.4689165">
+              <caret line="169" column="0" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="seller-test.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/seller-test.jsp">
+      <file leaf-file-name="TestPaperController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/controller/TestPaperController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="58" column="47" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="47" />
+              <caret line="44" column="21" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="left（管理员).jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/left（管理员).jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.878788">
+              <caret line="56" column="54" selection-start-line="56" selection-start-column="54" selection-end-line="56" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -165,32 +278,48 @@
         <option value="$PROJECT_DIR$/src/com/service/MessagesController.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/com/service/MarkService.java" />
-        <option value="$PROJECT_DIR$/web/test.jsp" />
         <option value="$PROJECT_DIR$/src/com/controller/MarkController.java" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/web/login.html" />
         <option value="$PROJECT_DIR$/web/css/login.css" />
         <option value="$PROJECT_DIR$/src/com/utils/GeneratorSqlmap.java" />
         <option value="$PROJECT_DIR$/src/com/utils/Dates.java" />
         <option value="$PROJECT_DIR$/src/generatorConfig.xml" />
-        <option value="$PROJECT_DIR$/src/com/service/StudentService.java" />
         <option value="$PROJECT_DIR$/src/com/service/SubjectService.java" />
-        <option value="$PROJECT_DIR$/src/com/service/TeacherService.java" />
         <option value="$PROJECT_DIR$/src/com/service/TestPaperService.java" />
         <option value="$PROJECT_DIR$/src/com/service/MessagesService.java" />
-        <option value="$PROJECT_DIR$/src/com/controller/StudentController.java" />
-        <option value="$PROJECT_DIR$/src/com/controller/SubjectController.java" />
-        <option value="$PROJECT_DIR$/src/com/controller/TeacherController.java" />
         <option value="$PROJECT_DIR$/src/com/controller/MessagesController.java" />
-        <option value="$PROJECT_DIR$/src/com/controller/QuestionBankController.java" />
         <option value="$PROJECT_DIR$/src/com/service/QuestionBankService.java" />
         <option value="$PROJECT_DIR$/src/com/service/AnswerService.java" />
         <option value="$PROJECT_DIR$/web/seller-test.html" />
         <option value="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" />
         <option value="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" />
-        <option value="$PROJECT_DIR$/src/com/controller/TestPaperController.java" />
         <option value="$PROJECT_DIR$/web/seller-test.jsp" />
         <option value="$PROJECT_DIR$/src/com/controller/AnswerController.java" />
+        <option value="$PROJECT_DIR$/web/login.html" />
+        <option value="$PROJECT_DIR$/src/com/service/TeacherService.java" />
+        <option value="$PROJECT_DIR$/web/main（学生）.html" />
+        <option value="$PROJECT_DIR$/web/left（学生）.jsp" />
+        <option value="$PROJECT_DIR$/web/top.html" />
+        <option value="$PROJECT_DIR$/web/css/style.css" />
+        <option value="$PROJECT_DIR$/web/top.jsp" />
+        <option value="$PROJECT_DIR$/web/login.jsp" />
+        <option value="$PROJECT_DIR$/web/main（学生）.jsp" />
+        <option value="$PROJECT_DIR$/web/right（用户）.html" />
+        <option value="$PROJECT_DIR$/src/com/controller/TeacherController.java" />
+        <option value="$PROJECT_DIR$/web/main (管理员).jsp" />
+        <option value="$PROJECT_DIR$/web/test.jsp" />
+        <option value="$PROJECT_DIR$/src/com/service/StudentService.java" />
+        <option value="$PROJECT_DIR$/src/com/controller/StudentController.java" />
+        <option value="$PROJECT_DIR$/web/right（课程）.html" />
+        <option value="$PROJECT_DIR$/web/right（用户）.jsp" />
+        <option value="$PROJECT_DIR$/web/right（课程）.jsp" />
+        <option value="$PROJECT_DIR$/web/tab （试题管理）.html" />
+        <option value="$PROJECT_DIR$/src/com/controller/SubjectController.java" />
+        <option value="$PROJECT_DIR$/src/com/controller/QuestionBankController.java" />
+        <option value="$PROJECT_DIR$/web/left（管理员).jsp" />
+        <option value="$PROJECT_DIR$/web/tab （试题管理）.jsp" />
+        <option value="$PROJECT_DIR$/src/com/controller/TestPaperController.java" />
+        <option value="$PROJECT_DIR$/web/right（试卷管理）.jsp" />
       </list>
     </option>
   </component>
@@ -206,11 +335,17 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="-7" />
+    <option name="width" value="1370" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -237,7 +372,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -281,24 +415,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Self_Testing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Self_Testing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -318,28 +434,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Self_Testing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Self_Testing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -367,6 +461,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -377,11 +472,12 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Administrator\Desktop\Self_Testing\src\com" />
       <recent name="C:\Users\Administrator\Desktop\Self_Testing\web" />
+      <recent name="C:\Users\Administrator\Desktop\Self_Testing\src\com" />
       <recent name="C:\Users\Administrator\Desktop\Self_Testing\web\js" />
       <recent name="C:\Users\Administrator\Desktop\Self_Testing\web\css" />
       <recent name="C:\Users\Administrator\Desktop\Self_Testing\src\com\utils" />
@@ -948,7 +1044,18 @@
       <workItem from="1459190691817" duration="3614000" />
       <workItem from="1459194318594" duration="13000" />
       <workItem from="1459194336194" duration="2000" />
-      <workItem from="1459195648638" duration="1000" />
+      <workItem from="1459195648638" duration="646000" />
+      <workItem from="1459264399841" duration="124000" />
+      <workItem from="1459834917476" duration="888000" />
+      <workItem from="1459852186608" duration="8000" />
+      <workItem from="1459865732215" duration="623000" />
+      <workItem from="1459866677269" duration="2626000" />
+      <workItem from="1459875168974" duration="1421000" />
+      <workItem from="1459876767610" duration="8571000" />
+      <workItem from="1459908183417" duration="138000" />
+      <workItem from="1459908409833" duration="10382000" />
+      <workItem from="1459939543213" duration="3444000" />
+      <workItem from="1459943342026" duration="5472000" />
     </task>
     <task id="LOCAL-00001" summary="add README.md">
       <created>1458802515526</created>
@@ -992,43 +1099,49 @@
       <option name="project" value="LOCAL" />
       <updated>1458897305336</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add Demo">
+      <created>1459195677040</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1459195677040</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34526000" />
+    <option name="totallyTimeSpent" value="68868000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <frame x="-7" y="0" width="1370" height="735" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32492113" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2203514" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22304283" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.384" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43533123" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32492113" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1044,7 +1157,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43533123" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3548896" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1054,11 +1167,19 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32492113" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2203514" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22327965" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -1071,25 +1192,34 @@
     <MESSAGE value="delete mark" />
     <MESSAGE value="beta for the first submit" />
     <MESSAGE value="beta for the first time to submit" />
-    <option name="LAST_COMMIT_MESSAGE" value="beta for the first time to submit" />
+    <MESSAGE value="add Demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Demo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
-    <watches-manager />
+    <watches-manager>
+      <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
+        <watch expression="[i].value" />
+        <watch expression="[i].value" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/controller/AnswerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/controller/TestPaperController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="96" column="9" selection-start-line="96" selection-start-column="9" selection-end-line="96" selection-end-column="9" />
-          <folding>
-            <element signature="e#640#641#0" expanded="true" />
-            <element signature="e#682#683#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1097,15 +1227,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/seller-test.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="58" column="47" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1113,10 +1234,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="96" column="9" selection-start-line="96" selection-start-column="9" selection-end-line="96" selection-end-column="9" />
-          <folding>
-            <element signature="e#640#641#0" expanded="true" />
-            <element signature="e#682#683#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1124,15 +1241,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/seller-test.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="58" column="47" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1140,10 +1248,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="96" column="9" selection-start-line="96" selection-start-column="9" selection-end-line="96" selection-end-column="9" />
-          <folding>
-            <element signature="e#640#641#0" expanded="true" />
-            <element signature="e#682#683#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/controller/AnswerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/controller/TestPaperController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="96" column="9" selection-start-line="96" selection-start-column="9" selection-end-line="96" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -1151,23 +1269,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/seller-test.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/seller-test.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="77" column="27" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1179,41 +1280,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.083478265">
-          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-        </state>
-      </provider>
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/jquery.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="424.0303">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/store.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-119.87063">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/test.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46153846">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-          <folding />
+        <state vertical-scroll-proportion="0.083478265">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -1221,7 +1293,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.972028">
           <caret line="47" column="26" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1229,23 +1300,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="4.852459">
           <caret line="98" column="21" selection-start-line="98" selection-start-column="21" selection-end-line="98" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0419581">
-          <caret line="45" column="26" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41958043">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1274,7 +1328,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3444056">
           <caret line="16" column="141" selection-start-line="16" selection-start-column="141" selection-end-line="16" selection-end-column="141" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1282,7 +1335,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5482234">
           <caret line="9" column="28" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1290,6 +1342,221 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.27768594">
           <caret line="9" column="32" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/controller/AnswerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28595042">
+          <caret line="53" column="14" selection-start-line="53" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/ask.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/imglist1 （进入自测）.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/imglist1 （进入试题）.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/images/pass1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/images/pass2.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/service/TeacherService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="39" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="172" column="9" selection-start-line="172" selection-start-column="9" selection-end-line="172" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.5454545">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/controller/TeacherController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4832536">
+          <caret line="75" column="24" selection-start-line="75" selection-start-column="24" selection-end-line="75" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/left（学生）.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.6363637">
+          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/models/StudentExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0923483">
+          <caret line="276" column="24" selection-start-line="276" selection-start-column="24" selection-end-line="276" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/service/StudentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.013192612">
+          <caret line="60" column="35" selection-start-line="59" selection-start-column="38" selection-end-line="60" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/controller/StudentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.119008265">
+          <caret line="91" column="13" selection-start-line="91" selection-start-column="13" selection-end-line="91" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/service/SubjectService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.03966942">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/models/Subject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1983471">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/right（用户）.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.10982659">
+          <caret line="226" column="18" selection-start-line="226" selection-start-column="18" selection-end-line="226" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/tab （试题计组）.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.363636">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/top.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4125874">
+          <caret line="42" column="63" selection-start-line="42" selection-start-column="63" selection-end-line="42" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/imglist1（答题）.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/tab（留言反馈）.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.048951">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/main（学生）.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/main (管理员).jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.67132866">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46181172">
+          <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/right（课程）.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/test.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7741935">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/controller/QuestionBankController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.03966942">
+          <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/controller/SubjectController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6429752">
+          <caret line="67" column="30" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/tab （试题管理）.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27531084">
+          <caret line="67" column="11" selection-start-line="67" selection-start-column="11" selection-end-line="67" selection-end-column="11" />
           <folding />
         </state>
       </provider>
@@ -1297,26 +1564,23 @@
     <entry file="file://$PROJECT_DIR$/src/com/controller/TestPaperController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="96" column="9" selection-start-line="96" selection-start-column="9" selection-end-line="96" selection-end-column="9" />
-          <folding>
-            <element signature="e#640#641#0" expanded="true" />
-            <element signature="e#682#683#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/seller-test.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="58" column="47" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="47" />
+          <caret line="44" column="21" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/controller/AnswerController.java">
+    <entry file="file://$PROJECT_DIR$/web/left（管理员).jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.03966942">
-          <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
+        <state vertical-scroll-proportion="-6.878788">
+          <caret line="56" column="54" selection-start-line="56" selection-start-column="54" selection-end-line="56" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/right（试卷管理）.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4689165">
+          <caret line="169" column="0" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
           <folding />
         </state>
       </provider>

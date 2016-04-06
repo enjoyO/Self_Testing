@@ -57,11 +57,8 @@ public class TestPaperController {
 
     @RequestMapping("/updatePaper")
     public String updatePaper(TestPaper paper) {
-        int num = paper.getTotalQuestion();
-        int score = 100 / num;
-        paper.setScore(score);
         testPaperService.updatePaper(paper);
-        return "test.jsp";
+        return "/getAllPapers.action";
     }
 
     @RequestMapping("/findPaper")
@@ -76,7 +73,7 @@ public class TestPaperController {
     public String getAllPapers(HttpServletRequest request){
         List<TestPaper> list = testPaperService.getAllPapers();
         request.setAttribute("allPapers",list);
-        return "test.jsp";
+        return "right（试卷管理）.jsp";
     }
 
     @RequestMapping("/getPaper")

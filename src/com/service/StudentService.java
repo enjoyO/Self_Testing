@@ -37,7 +37,16 @@ public class StudentService {
         studentMapper.deleteByExample(studentExample);
     }
 
-    public Student modify(int id){
+    public void deleteStudents(int[] id) {
+        for (int i = 0; i < id.length; i++) {
+            StudentExample studentExample = new StudentExample();
+            StudentExample.Criteria criteria = studentExample.createCriteria();
+            criteria.andIdEqualTo(id[i]);
+            studentMapper.deleteByExample(studentExample);
+        }
+    }
+
+    public Student modify(int id) {
         Student student = studentMapper.selectByPrimaryKey(id);
         return student;
     }
@@ -51,7 +60,17 @@ public class StudentService {
         StudentExample.Criteria criteria = studentExample.createCriteria();
         criteria.andNameLike(name);
         List<Student> list = studentMapper.selectByExample(studentExample);
+        if(list.size()==0) return null;
         return list;
+    }
+
+    public Student findByIdAndName(int id, String name) {
+        StudentExample studentExample = new StudentExample();
+        StudentExample.Criteria criteria = studentExample.createCriteria();
+        criteria.andIdEqualTo(id).andNameLike(name);
+        List<Student> list = studentMapper.selectByExample(studentExample);
+        if(list.size()==0) return null;
+        return list.get(0);
     }
 
     public Student findById(int id) {
@@ -59,7 +78,7 @@ public class StudentService {
         return student;
     }
 
-    public List<Student> getAllStudents(){
+    public List<Student> getAllStudents() {
         StudentExample studentExample = new StudentExample();
         StudentExample.Criteria criteria = studentExample.createCriteria();
         criteria.andIdIsNotNull();

@@ -30,6 +30,15 @@ public class TeacherService {
         return teacher;
     }
 
+    public Teacher loginTeacher(String username, String password){
+        TeacherExample teacherExample = new TeacherExample();
+        TeacherExample.Criteria criteria = teacherExample.createCriteria();
+        criteria.andUsernameEqualTo(username).andPasswordEqualTo(password);
+        List<Teacher> list = teacherMapper.selectByExample(teacherExample);
+        if(list.size()==0) return null;
+        return list.get(0);
+    }
+
     public void updateTeacher(Teacher teacher){
         teacherMapper.updateByPrimaryKeySelective(teacher);
     }

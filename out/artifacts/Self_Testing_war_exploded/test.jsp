@@ -9,6 +9,8 @@
     <script type="text/javascript" src=""></script>
 </head>
 <body>
-    成功
+<div style="font-family: 'Microsoft YaHei';">
+    <h2>欢迎页面</h2>
+</div>
 </body>
 </html>

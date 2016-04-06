@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>答疑中心</title>
+
+<link rel="stylesheet" href="css/ask.css" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/select.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+<script type="text/javascript" src="js/select-ui.min.js"></script>
+<script type="text/javascript" src="editor/kindeditor.js"></script>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+    KE.show({
+        id : 'content7',
+        cssPath : './index.css'
+    });
+  </script>
+
+
+</head>
+<body>
+
+<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="#">用户</a></li>
+    <li><a href="#">留言反馈</a></li>
+    </ul>
+    </div>
+    
+    <div class="formbody">
+    
+    
+    <div id="usual1" class="usual"> 
+    
+    <div class="itab">
+  	<ul> 
+    <li><a href="#tab1" class="selected">留言反馈</a></li> 
+ 
+  	</ul>
+    </div> 
+    
+  	<div id="tab1" class="tabson">
+    
+    <div class="formtext">Hi，<b>同学</b>，欢迎您使用留言反馈功能！</div>
+    
+    <ul class="forminfo">
+
+    <li><label>留言内容<b>*</b></label>
+    
+
+    <textarea id="content7" name="content" style="width:700px;height:250px;visibility:hidden;"></textarea>
+    
+    </li>
+    <li><label>&nbsp;</label><input name="" type="button" class="btn" value="马上发布"/></li>
+    </ul>
+    
+    </div> 
+    
+    
+    
+    
+    
+    </div>
+
+
+
+<script type="text/javascript" src="js/tipswindown.js"></script>
+<script type="text/javascript">
+/*
+*弹出本页指定ID的内容于窗口
+*id 指定的元素的id
+*title:	window弹出窗的标题
+*width:	窗口的宽,height:窗口的高
+*/
+function showTipsWindown(title,id,width,height){
+	tipsWindown(title,"id:"+id,width,height,"true","","true",id);
+}
+function confirmTerm(s) {
+	parent.closeWindown();
+	if(s == 1) {
+		parent.document.getElementById("isread").checked = true;
+	}
+}
+//弹出层调用
+function popTips(){
+	showTipsWindown("答疑中心", 'simTestContent', 620, 250);
+	$("#isread").attr("checked", false);
+}
+$(document).ready(function(){
+	
+	$("#isread").click(popTips);
+	$("#isread-text").click(popTips);
+	
+});
+</script>
+
+<div class="kf_qq_r"><a id="isread-text" href="#"></a></div>
+
+<div style="display:none;">
+	<div id="simTestContent" class="simScrollCont">
+		<div class="mainlist">
+			<div class="kf_qq_li">
+				<div class="kf_qq_li_left kf_qq_li_1">
+				</div>
+				<div class="kf_qq_li_right">
+					<div class="kf_r_t">
+						<span>系统QQ：</span><a class="qyqq" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=123456&site=qq&menu=yes">在线咨询</a><span style="padding-left:19px;">400电话：4000-0000-00</span></div>
+					<div class="kf_r_d">
+						系统QQ与400电话采用集中调度，多人值班，受理所有服务咨询</div>
+				</div>
+			</div>
+			<div class="kf_qq_li">
+				<div class="kf_qq_li_left kf_qq_li_2">
+				</div>
+				<div class="kf_qq_li_right">
+					<div class="kf_qq_c">
+						<ul>
+							<li>
+							<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=123456&site=qq&menu=yes">
+							答疑-刘老师</a></li>
+							<li>
+							<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=123456&site=qq&menu=yes">
+							答疑-赵老师</a></li>
+							<li>
+							<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=123456&site=qq&menu=yes">
+							答疑-宋老师</a></li>
+							<li>
+							<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=123456&site=qq&menu=yes">
+							答疑-张老师</a></li>
+							<li>
+							<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=12345633&site=qq&menu=yes">
+							答疑-王老师</a></li>
+							<li>
+							<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=12345634&site=qq&menu=yes">
+							答疑-高老师</a></li>
+							<li>
+							<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=12345638&site=qq&menu=yes">
+							答疑-李老师</a></li>
+							<li>
+							<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=12345632&site=qq&menu=yes">
+							答疑-何老师</a></li>
+						</ul>
+					</div>
+					<div class="kf_r_d">
+						答疑相关，请咨询答疑老师。为避免丢失消息，请尽量添加好友</div>
+				</div>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>

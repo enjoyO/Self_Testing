@@ -24,7 +24,7 @@ public class QuestionBankController {
     @RequestMapping("/addQuestion")
     public String addQuestion(QuestionBank questionBank){
         questionBankService.addQuestion(questionBank);
-        return "test.jsp";
+        return "tab （试题管理）.jsp";
     }
 
     @RequestMapping("/deleteQuestion")
