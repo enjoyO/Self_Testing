@@ -67,71 +67,26 @@
     <input name="answer" type="radio" value="D" />D&nbsp;&nbsp;&nbsp;&nbsp;
     </cite>
     </li>
-    <li><label>&nbsp;</label><input type="submit" class="btn" value="确认添加"/></li>
+    <li><label>&nbsp;</label><input type="submit" class="btn sub" value="确认添加"/></li>
     </ul>
     </form>
-    </div> 
-    
+    </div>
     
   	<div id="tab1" class="tabson">
+
     <ul class="classlist">
-    
-    <li>
-    <span><img src="images/002.jpg" /></span>
-    <div class="lright">
-    <h2>计算机组成原理期中试题</h2>
-    <p>题数：共60道<br />已发布：4道<br />未发布：56道</p>
-    <a href="tab （试题计组）.html" class="enter">进入试题</a>
-    </div>
-    </li>
-    
-    <li>
-    <span><img src="images/002.jpg" /></span>
-    <div class="lright">
-    <h2>模拟电子技术期中试题</h2>
-    <p>题数：共60道<br />已发布：0道<br />未发布：0道</p>
-    <a class="enter">进入试题</a>
-    </div>
-    </li>
-    
-    <li>
-    <span><img src="images/002.jpg" /></span>
-    <div class="lright">
-    <h2>数据结构期末试题</h2>
-    <p>题数：共60道<br />已发布：0道<br />未发布：0道</p>
-    <a class="enter">进入试题</a>
-    </div>
-    </li>
-    
-    <li>
-    <span><img src="images/002.jpg" /></span>
-    <div class="lright">
-    <h2>java期末试题</h2>
-    <p>题数：共60道<br />已发布：0道<br />未发布：0道</p>
-    <a class="enter">进入试题</a>
-    </div>
-    </li>
-    
-    <li>
-    <span><img src="images/002.jpg" /></span>
-    <div class="lright">
-    <h2>计算机网络期中试题</h2>
-    <p>题数：共60道<br />已发布：0道<br />未发布：0道</p>
-    <a class="enter">进入试题</a>
-    </div>
-    </li>
-    
-    <li>
-    <span><img src="images/002.jpg" /></span>
-    <div class="lright">
-    <h2>数字逻辑期末试题</h2>
-    <p>题数：共60道<br />已发布：0道<br />未发布：0道</p>
-    <a class="enter">进入试题</a>
-    </div>
-    </li>
-    
-   
-    
+
+    <c:forEach items="${requestScope.allPapers}" var="paper">
+        <li>
+        <span><img src="images/002.jpg" /></span>
+        <div class="lright">
+        <h2>${paper.testName}</h2>
+        <p>${paper.totalQuestion}<br />时间：${paper.times}<br /></p>
+        <a href="/getAllQuestions.action" class="enter">进入试卷</a>
+        </div>
+        </li>
+    </c:forEach>
+
     </ul>
 
     

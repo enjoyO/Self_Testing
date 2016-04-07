@@ -39,7 +39,7 @@ public class TestPaperController {
         int score = 100 / num;
         paper.setScore(score);
         testPaperService.addPaper(paper);
-        return "test.jsp";
+        return "/getAllPapers.action";
     }
 
     @RequestMapping("/deletePaper")
@@ -65,8 +65,8 @@ public class TestPaperController {
     public String findPapers(@RequestParam(value = "paperName") String paperName,
                             HttpServletRequest request){
         List<TestPaper> list = testPaperService.findPapers(paperName);
-        request.setAttribute("papers",list);
-        return "test.jsp";
+        request.setAttribute("allPapers",list);
+        return "right（试卷管理）.jsp";
     }
 
     @RequestMapping("/getAllPapers")

@@ -1290,7 +1290,7 @@ h2 {
     width: 150px;
 }
 .classlist li .lright2 {
-    width: 150px;
+    /*width: 150px;*/
 }
 .classlist li .lright h2 , .lright2 h2{
     font-size: 12px;

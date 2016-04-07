@@ -1,7 +1,11 @@
 package com.controller;
 
+import com.models.QuestionBank;
 import com.models.Subject;
+import com.models.TestPaper;
+import com.service.QuestionBankService;
 import com.service.SubjectService;
+import com.service.TestPaperService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -12,6 +16,24 @@ import java.util.List;
 @Controller
 public class SubjectController {
     private SubjectService subjectService;
+    private TestPaperService testPaperService;
+    private QuestionBankService questionBankService;
+
+    public QuestionBankService getQuestionBankService() {
+        return questionBankService;
+    }
+
+    public void setQuestionBankService(QuestionBankService questionBankService) {
+        this.questionBankService = questionBankService;
+    }
+
+    public TestPaperService getTestPaperService() {
+        return testPaperService;
+    }
+
+    public void setTestPaperService(TestPaperService testPaperService) {
+        this.testPaperService = testPaperService;
+    }
 
     public SubjectService getSubjectService() {
         return subjectService;
@@ -65,6 +87,10 @@ public class SubjectController {
     public String toPaperMan(HttpServletRequest request){
         List<Subject> list = subjectService.getAllSubjects();
         request.setAttribute("allSubjects",list);
+        List<TestPaper> list1 = testPaperService.getAllPapers();
+        request.setAttribute("allPapers",list1);
+        List<QuestionBank> list2 = questionBankService.getAllQuestions();
+        request.setAttribute("allQuestions",list2);
         return "tab （试题管理）.jsp";
     }
 }

@@ -43,7 +43,7 @@ public class QuestionBankController {
     @RequestMapping("/updateQuestion")
     public String updateQuestion(QuestionBank questionBank){
         questionBankService.updateQuestion(questionBank);
-        return "test.jsp";
+        return "/getAllQuestions.action";
     }
 
     @RequestMapping("/findQuestions")
@@ -58,6 +58,6 @@ public class QuestionBankController {
     public String getAllQuestions(HttpServletRequest request){
         List<QuestionBank> list = questionBankService.getAllQuestions();
         request.setAttribute("allQuestions",list);
-        return "test.jsp";
+        return "tab （试题计组）.jsp";
     }
 }

@@ -124,7 +124,7 @@
         <thead>
         <tr>
             <th></th>
-            <th>试卷</th>
+            <th>名称</th>
             <th>考试时间</th>
             <th>题数</th>
             <th>操作</th>
@@ -139,7 +139,8 @@
                 <td><c:out value="${paper.times}"/></td>
                 <td><c:out value="${paper.totalQuestion}"/></td>
                 <td><a href="#" class="tablelink modify" value="${paper.id},${paper.testName},${paper.times}"><span
-                        class="click2">修改</span></a> <a href="#" class="tablelink del" value="${paper.id}"><span class="click3">删除</span></a>
+                        class="click2">修改</span></a> <a href="#" class="tablelink del" value="${paper.id}"><span
+                        class="click3">删除</span></a>
                 </td>
             </tr>
         </c:forEach>
@@ -154,61 +155,72 @@
                 $(".mod_name").attr("value", b[1]);
                 $(".mod_time").attr("value", b[2]);
             });
-            $(".del").click(function(){
+            $(".del").click(function () {
                 var a = $(this).attr("value");
-               $(this).parents("tr").hide(400);
-                $.post("/deletePaper.action",{id:a},function(data,textStatus){
+                $(this).parents("tr").hide(400);
+                $.post("/deletePaper.action", {id: a}, function (data, textStatus) {
 
                 });
             });
         })
     </script>
 
+    <form action="/addPaper.action" method="post">
+        <div class="tip1">
+            <div class="tiptop"><span>添加试卷</span><a></a></div>
 
-    <div class="tip1">
-        <div class="tiptop"><span>添加成绩</span><a></a></div>
-
-        <div class="tipinfo">
-            <span><img src="images/ticon.png"/></span>
-            <div class="tipright">
-                <div class="kuang"> 课程：<input type="text" class="inputborder1" id="" name="" placeholder="　输入课程名"
-                                              value=""></div>
-                <div class="kuang"> 试卷：<input type="text" class="inputborder1" name="" placeholder="　输入试卷名" value="">
+            <div class="tipinfo">
+                <span><img src="images/ticon.png"/></span>
+                <div class="tipright">
+                    <div class="kuang"> 名称：<input type="text" class="inputborder1" name="testName" placeholder="　输入试卷名"
+                                                  value="">
+                    </div>
+                    <div class="kuang"> 时间：<input type="text" class="inputborder1" name="times" placeholder="　输入考试时间"
+                                                  value=""></div>
+                    <div class="kuang"> 题数：<input type="text" class="inputborder1 adnum" name="totalQuestion"
+                                                  placeholder="　输入总题数"
+                                                  value=""></div>
                 </div>
-                <div class="kuang"> 时间：<input type="text" class="inputborder1" id="" name="" placeholder="　输入考试时间"
-                                              value=""></div>
-                <div class="kuang"> 题数：<input type="text" class="inputborder1" id="" name="" placeholder="　输入总题数"
-                                              value=""></div>
             </div>
+
+            <div class="tipbtn">
+                <input type="submit" class="sure sub" value="确定"/>&nbsp;
+                <input type="button" class="cancel" value="取消"/>
+            </div>
+
         </div>
-
-        <div class="tipbtn">
-            <input name="" type="button" class="sure" value="确定"/>&nbsp;
-            <input name="" type="button" class="cancel" value="取消"/>
-        </div>
-
-    </div>
-
+    </form>
+    <script>
+        $(function () {
+            $(".sub").click(function () {
+                var a = $(".adnum").val();
+                if (a == 0 || 100 % a != 0) {
+                    alert("请输入能被100整除的数~");
+                    return false;
+                }
+            })
+        })
+    </script>
 
 </div>
 
 <div class="tip2">
     <form action="/updatePaper.action" method="post">
-    <div class="tiptop"><span>修改试卷</span><a></a></div>
+        <div class="tiptop"><span>修改试卷</span><a></a></div>
 
-    <div class="tipinfo">
-        <span><img src="images/ticon.png"/></span>
-        <div class="tipright">
-            <div class="kuang"> 试卷：<input type="text" class="inputborder1 mod_name" name="testName" value=""></div>
-            <div class="kuang"> 时间：<input type="text" class="inputborder1 mod_time" name="times" value=""></div>
+        <div class="tipinfo">
+            <span><img src="images/ticon.png"/></span>
+            <div class="tipright">
+                <div class="kuang"> 名称：<input type="text" class="inputborder1 mod_name" name="testName" value=""></div>
+                <div class="kuang"> 时间：<input type="text" class="inputborder1 mod_time" name="times" value=""></div>
+            </div>
         </div>
-    </div>
 
-    <div class="tipbtn">
-        <input type="hidden" class="mod_id" name="id" value=""/>
-        <input type="submit" class="sure" value="确定"/>&nbsp;
-        <input type="button" class="cancel" value="取消"/>
-    </div>
+        <div class="tipbtn">
+            <input type="hidden" class="mod_id" name="id" value=""/>
+            <input type="submit" class="sure" value="确定"/>&nbsp;
+            <input type="button" class="cancel" value="取消"/>
+        </div>
     </form>
 </div>
 
@@ -216,26 +228,24 @@
 </div>
 
 
-
 </div>
 <div class="tip4">
     <div class="tiptop"><span>查询试卷</span><a></a></div>
 
-    <div class="tipinfo">
-        <span><img src="images/ticon.png"/></span>
-        <div class="tipright">
-            <div class="kuang"> 课程：<input type="text" class="inputborder1" name="" placeholder="　输入课程" value="">
-            </div>
-            <div class="kuang"> 试卷：<input type="text" class="inputborder1" name="" placeholder="　输入试卷名" value="">
+    <form action="/findPaper.action" method="post">
+        <div class="tipinfo">
+            <span><img src="images/ticon.png"/></span>
+            <div class="tipright">
+                <div class="kuang"> 试卷名称：<input type="text" class="inputborder1" name="paperName" placeholder="　输入试卷名"
+                                                value="">
+                </div>
             </div>
         </div>
-    </div>
-
-    <div class="tipbtn">
-        <input name="" type="button" class="sure" value="确定"/>&nbsp;
-        <input name="" type="button" class="cancel" value="取消"/>
-    </div>
-
+        <div class="tipbtn">
+            <input name="" type="submit" class="sure" value="确定"/>&nbsp;
+            <input name="" type="button" class="cancel" value="取消"/>
+        </div>
+    </form>
 </div>
 
 
