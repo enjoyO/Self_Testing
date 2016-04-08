@@ -82,7 +82,7 @@
         <div class="lright">
         <h2>${paper.testName}</h2>
         <p>${paper.totalQuestion}<br />时间：${paper.times}<br /></p>
-        <a href="/getAllQuestions.action" class="enter">进入试卷</a>
+        <a href="/getAllQuestions.action?paperId=${paper.id}" class="enter">进入试卷</a>
         </div>
         </li>
     </c:forEach>

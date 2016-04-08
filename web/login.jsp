@@ -80,7 +80,7 @@
 
 
                     <li class="con_r_right" style="display: block;">
-                        <form id="login_stu" method="post" action="main（学生）.jsp">
+                        <form id="login_stu" method="post" action="/toMainStu.action">
                             <div class="user">
                                 <div><span class="user-icon"></span>
                                     <input type="text" name="id_1" placeholder="　输入学号" value="">

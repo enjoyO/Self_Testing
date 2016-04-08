@@ -44,7 +44,7 @@ $(function(){
     <span><img src="images/leftico03.png" /></span>用户
     </div>
     	<ul class="menuson">
-        <li class="active"><cite></cite><a href="imglist1 （进入自测）.html" target="rightFrame">进入自测</a><i></i></li>
+			<li class="active"><cite></cite><a href="/toMainStu.action" target="rightFrame">进入自测</a><i></i></li>
         <li ><cite></cite><a href="tab（留言反馈）.html" target="rightFrame">留言反馈</a><i></i></li>
         </ul>    
     </dd>

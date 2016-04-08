@@ -63,7 +63,7 @@
 </head>
 
 <body>
-
+<input type="hidden" class="pId" value="${requestScope.paperId}"/>
 <div class="place">
     <span>位置：</span>
     <ul class="placeul">
@@ -89,6 +89,8 @@
                 <input type="radio" name="answer"/>
                 <label>C．<c:out value="${question.optionThree}"/></label>
                 <br/>
+                <input type="hidden" class="num" value="${requestScope.pa.totalQuestion}"/>
+                <input type="hidden" class="ques" value="${requestScope.pa.questionId}">
                 <input type="radio" name="answer"/>
                 <label>D．<c:out value="${question.optionFour}"/></label>
                 <p><a href="#" class="modify"
@@ -101,18 +103,35 @@
 </ul>
 
 <div class="clear">
-    <a class="enter ssub">确认发布</a>
+    <a href="/toPaperMan.action" class="enter ssub">确认发布</a>
 </div>
 <script>
     $(function () {
+        var ques = $(".ques").val();
+        var quesId = ques.split(",");
+        var t = $(".test");
+        for (var i = 0; i < quesId.length; i++) {
+            for (var j = 0; j < t.length; j++) {
+                if (t[j].value == quesId[i]) {
+                    t[j].checked = true;
+                }
+            }
+        }
+
         $(".ssub").click(function () {
             var a = $(".test:checked");
             var b = "";
             for (var i = 0; i < a.length; i++) {
                 b = b + a[i].value + ",";
             }
-            $.post("/updatePaper.action",{questionId:b},function(data,textStatus){
-            })
+            var c = $(".pId").val();
+            var d = $(".num").val();
+            if (a.length != d) {
+                alert("请选择正确的题数(" + d + ")！");
+                return false;
+            }
+            $.post("/updatePaper.action", {id: c, questionId: b}, function (data, textStatus) {
+            });
         });
     });
 </script>
@@ -187,7 +206,9 @@
 </script>
 
 <script type="text/javascript">
-    $('.tablelist tbody tr:odd').addClass('odd');
+    $(function () {
+        $('.tablelist tbody tr:odd').addClass('odd');
+    })
 </script>
 
 

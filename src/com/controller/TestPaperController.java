@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
+import java.awt.print.Paper;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -57,7 +58,9 @@ public class TestPaperController {
 
     @RequestMapping("/updatePaper")
     public String updatePaper(TestPaper paper) {
-        testPaperService.updatePaper(paper);
+        TestPaper p = testPaperService.modifyPaper(paper.getId());
+        p.setQuestionId(paper.getQuestionId());
+        testPaperService.updatePaper(p);
         return "/getAllPapers.action";
     }
 
@@ -74,6 +77,13 @@ public class TestPaperController {
         List<TestPaper> list = testPaperService.getAllPapers();
         request.setAttribute("allPapers",list);
         return "right（试卷管理）.jsp";
+    }
+
+    @RequestMapping("/toMainStu")
+    public String toMainStu(HttpServletRequest request){
+        List<TestPaper> list = testPaperService.getAllPapers();
+        request.setAttribute("allPapers",list);
+        return "imglist1 （进入自测）.jsp";
     }
 
     @RequestMapping("/getPaper")
@@ -93,6 +103,6 @@ public class TestPaperController {
             list.add(questionBank);
         }
         request.setAttribute("questions",list);
-        return "seller-test.jsp";
+        return "imglist1（答题）.jsp";
     }
 }

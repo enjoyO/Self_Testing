@@ -10,18 +10,18 @@ String path = request.getContextPath();
 <title>学生自测系统界面</title>
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 <script>
-    $(function(){
-      if(${sessionScope.student.name eq null}){
-        window.location.href="login.jsp";
-      }
-    })
+    <%--$(function(){--%>
+      <%--if(${sessionScope.student.name eq null}){--%>
+        <%--window.location.href="login.jsp";--%>
+      <%--}--%>
+    <%--})--%>
 </script>
 </head>
 <frameset rows="88,*" cols="*" frameborder="no" border="0" framespacing="0">
   <frame src="top.jsp" name="topFrame" scrolling="No" noresize="noresize" id="topFrame" title="topFrame" />
   <frameset cols="187,*" frameborder="no" border="0" framespacing="0">
     <frame src="left（学生）.jsp" name="leftFrame" scrolling="No" noresize="noresize" id="leftFrame" title="leftFrame" />
-    <frame src="imglist1 （进入自测）.html" name="rightFrame" id="rightFrame" title="rightFrame" />
+    <frame src="test.jsp" name="rightFrame" id="rightFrame" title="rightFrame" />
   </frameset>
 </frameset>
 <noframes><body>

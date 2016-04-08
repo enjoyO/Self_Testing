@@ -10,7 +10,7 @@
 
     <bean class="com.controller.AnswerController" p:answerService-ref="answerService" p:testPaperService-ref="testPaperService" p:questionBankService-ref="questionBankService"/>
     <bean class="com.controller.MessagesController" p:messagesService-ref="messagesService"/>
-    <bean class="com.controller.QuestionBankController" p:questionBankService-ref="questionBankService"/>
+    <bean class="com.controller.QuestionBankController" p:questionBankService-ref="questionBankService" p:testPaperService-ref="testPaperService"/>
     <bean class="com.controller.StudentController" p:studentService-ref="studentService"/>
     <bean class="com.controller.SubjectController" p:subjectService-ref="subjectService" p:testPaperService-ref="testPaperService" p:questionBankService-ref="questionBankService"/>
     <bean class="com.controller.TeacherController" p:teacherService-ref="teacherService"/>
