@@ -163,6 +163,7 @@
                 alert("验证码不正确！");
                 return;
             }
+
             $.post("/loginTeacher.action",{username:a,password:b},function(data,textStatus){
                 if(data=="wrong"){
                     alert("密码错误！");

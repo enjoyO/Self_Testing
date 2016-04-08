@@ -26,7 +26,7 @@ public class MessagesController {
     public String addMessage(Messages messages){
         messages.setTimes(Dates.getDate());
         messagesService.addMessage(messages);
-        return "test.jsp";
+        return "/welcome.jsp";
     }
 
     @RequestMapping("/deleteMessage")
@@ -39,7 +39,7 @@ public class MessagesController {
                                HttpServletRequest request){
         List<Messages> list = messagesService.findMessages(info);
         request.setAttribute("messages",list);
-        return "test.jsp";
+        return "/welcome.jsp";
     }
 
     @RequestMapping("/getMessage")
@@ -47,20 +47,20 @@ public class MessagesController {
                              HttpServletRequest request){
         Messages messages = messagesService.getMessage(id);
         request.setAttribute("message",messages);
-        return "test.jsp";
+        return "/welcome.jsp";
     }
 
     @RequestMapping("/reply")
     public String reply(@RequestParam(value = "id") int id,
                         @RequestParam(value = "content") String content){
         messagesService.reply(id,content);
-        return "test.jsp";
+        return "/welcome.jsp";
     }
 
     @RequestMapping("/getAllMessages")
     public String getAllMessages(HttpServletRequest request){
         List<Messages> list = messagesService.getAllMessages();
         request.setAttribute("allMessages",list);
-        return "test.jsp";
+        return "/welcome.jsp";
     }
 }

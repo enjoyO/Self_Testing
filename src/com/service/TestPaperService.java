@@ -50,4 +50,14 @@ public class TestPaperService {
         List<TestPaper> list = testPaperMapper.selectByExample(testPaperExample);
         return list;
     }
+
+    public List<TestPaper> getStuPaper(List<Integer> paperIds){
+        TestPaperExample testPaperExample = new TestPaperExample();
+        TestPaperExample.Criteria criteria = testPaperExample.createCriteria();
+        for(int i = 0;i<paperIds.size();i++){
+            criteria = criteria.andIdNotEqualTo(paperIds.get(i));
+        }
+        List<TestPaper> list = testPaperMapper.selectByExample(testPaperExample);
+        return list;
+    }
 }

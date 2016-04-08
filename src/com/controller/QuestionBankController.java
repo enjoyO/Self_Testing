@@ -48,7 +48,7 @@ public class QuestionBankController {
                                  HttpServletRequest request){
         QuestionBank questionBank = questionBankService.modifyQuestion(id);
         request.setAttribute("question",questionBank);
-        return "test.jsp";
+        return "/welcome.jsp";
     }
 
     @RequestMapping("/updateQuestion")
@@ -62,7 +62,7 @@ public class QuestionBankController {
                                 HttpServletRequest request){
         List<QuestionBank> list = questionBankService.findQuestions(content);
         request.setAttribute("questions",list);
-        return "test.jsp";
+        return "/welcome.jsp";
     }
 
     @RequestMapping("/getAllQuestions")

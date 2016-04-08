@@ -46,7 +46,7 @@ $(function(){
     </div>
     	<ul class="menuson">
         <li class="active"><cite></cite><a href="/getAllStudents.action" target="rightFrame">用户信息</a><i></i></li>
-        <li><cite></cite><a href="right（成绩单）.html" target="rightFrame">用户成绩</a><i></i></li>
+        <li><cite></cite><a href="right（成绩单）.jsp" target="rightFrame">用户成绩</a><i></i></li>
         </ul>    
     </dd>
     

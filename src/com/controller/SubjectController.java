@@ -59,7 +59,7 @@ public class SubjectController {
                                  HttpServletRequest request){
         Subject subject = subjectService.modifySubject(id);
         request.setAttribute("modify",subject);
-        return "test.jsp";
+        return "/welcome.jsp";
     }
 
     @RequestMapping("/updateSubject")

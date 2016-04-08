@@ -2,6 +2,7 @@ package com.controller;
 
 import com.models.QuestionBank;
 import com.models.TestPaper;
+import com.service.AnswerService;
 import com.service.QuestionBankService;
 import com.service.TestPaperService;
 import org.springframework.stereotype.Controller;
@@ -9,14 +10,22 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
-import java.awt.print.Paper;
 import java.util.ArrayList;
 import java.util.List;
 
 @Controller
 public class TestPaperController {
     private TestPaperService testPaperService;
+    private AnswerService answerService;
     private QuestionBankService questionBankService;
+
+    public AnswerService getAnswerService() {
+        return answerService;
+    }
+
+    public void setAnswerService(AnswerService answerService) {
+        this.answerService = answerService;
+    }
 
     public QuestionBankService getQuestionBankService() {
         return questionBankService;
@@ -53,7 +62,7 @@ public class TestPaperController {
                               HttpServletRequest request) {
         TestPaper paper = testPaperService.modifyPaper(id);
         request.setAttribute("modify", paper);
-        return "test.jsp";
+        return "/welcome.jsp";
     }
 
     @RequestMapping("/updatePaper")
@@ -81,14 +90,15 @@ public class TestPaperController {
 
     @RequestMapping("/toMainStu")
     public String toMainStu(HttpServletRequest request){
-        List<TestPaper> list = testPaperService.getAllPapers();
+        List<Integer> list1 = answerService.examState(1);
+        List<TestPaper> list = testPaperService.getStuPaper(list1);
         request.setAttribute("allPapers",list);
         return "imglist1 （进入自测）.jsp";
     }
 
     @RequestMapping("/getPaper")
-    public String getPaper(HttpServletRequest request){
-        int id = 1;
+    public String getPaper(@RequestParam(value = "paperId") int paperId, HttpServletRequest request){
+        int id = paperId;
         TestPaper paper = testPaperService.modifyPaper(id);
         String questionIds = paper.getQuestionId();
         String[] questionId = questionIds.split(",");
@@ -103,6 +113,7 @@ public class TestPaperController {
             list.add(questionBank);
         }
         request.setAttribute("questions",list);
+        request.setAttribute("paperId",paperId);
         return "imglist1（答题）.jsp";
     }
 }

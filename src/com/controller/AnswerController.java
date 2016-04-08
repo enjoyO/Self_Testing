@@ -1,12 +1,10 @@
 package com.controller;
 
 import com.models.Answer;
-import com.models.QuestionBank;
 import com.models.TestPaper;
 import com.service.AnswerService;
 import com.service.QuestionBankService;
 import com.service.TestPaperService;
-import com.sun.deploy.net.HttpResponse;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -83,7 +81,6 @@ public class AnswerController {
         response.setContentType("text");
         response.getWriter().print(score);
         answerService.addAnswer(answer);
-//        return "test.jsp";
     }
 
     @RequestMapping("/findByStuId")
@@ -91,6 +88,13 @@ public class AnswerController {
                               HttpServletRequest request){
         List<Answer> list = answerService.findByStudentId(stuId);
         request.setAttribute("answers",list);
-        return "test.jsp";
+        return "/welcome.jsp";
+    }
+
+    @RequestMapping("/examState")
+    public void examState(HttpServletRequest request){
+        int stuId = 1;
+        List<Integer> list = answerService.examState(stuId);
+        request.setAttribute("paperIds",list);
     }
 }

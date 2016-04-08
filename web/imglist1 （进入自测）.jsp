@@ -55,7 +55,7 @@ $(function(){
         <div class="lright">
         <h2><c:out value="${paper.testName}"/></h2>
         <p>时间：<c:out value="${paper.times}"/><br />总题数：<c:out value="${paper.totalQuestion}"/><br /></p>
-        <a href="/getPaper.action" class="enter">进入自测</a>
+        <a href="/getPaper.action?paperId=${paper.id}" class="enter">进入自测</a>
         </div>
         </li>
     </c:forEach>

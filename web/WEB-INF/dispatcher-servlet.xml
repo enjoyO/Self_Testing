@@ -14,7 +14,7 @@
     <bean class="com.controller.StudentController" p:studentService-ref="studentService"/>
     <bean class="com.controller.SubjectController" p:subjectService-ref="subjectService" p:testPaperService-ref="testPaperService" p:questionBankService-ref="questionBankService"/>
     <bean class="com.controller.TeacherController" p:teacherService-ref="teacherService"/>
-    <bean class="com.controller.TestPaperController" p:testPaperService-ref="testPaperService" p:questionBankService-ref="questionBankService"/>
+    <bean class="com.controller.TestPaperController" p:testPaperService-ref="testPaperService" p:questionBankService-ref="questionBankService" p:answerService-ref="answerService"/>
 
     <mvc:annotation-driven></mvc:annotation-driven>
     <!--配置视图解析器-->

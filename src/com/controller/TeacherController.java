@@ -52,13 +52,13 @@ public class TeacherController {
                                  HttpServletRequest request){
         Teacher teacher = teacherService.modifyTeacher(id);
         request.setAttribute("modify",teacher);
-        return "test.jsp";
+        return "/welcome.jsp";
     }
 
     @RequestMapping("/updateTeacher")
     public String updateTeacher(Teacher teacher){
         teacherService.updateTeacher(teacher);
-        return "test.jsp";
+        return "/welcome.jsp";
     }
 
     @RequestMapping("/findTeachers")
@@ -66,13 +66,13 @@ public class TeacherController {
                                HttpServletRequest request){
         List<Teacher> list = teacherService.findTeachers(name);
         request.setAttribute("teachers",list);
-        return "test.jsp";
+        return "/welcome.jsp";
     }
 
     @RequestMapping("/getAllTeachers")
     public String getAllTeachers(HttpServletRequest request){
         List<Teacher> list = teacherService.getAllTeacher();
         request.setAttribute("allTeachers",list);
-        return "test.jsp";
+        return "/welcome.jsp";
     }
 }

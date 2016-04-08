@@ -64,7 +64,7 @@ public class StudentController {
                                 HttpServletRequest request) {
         Student student = studentService.modify(id);
         request.setAttribute("modify", student);
-        return "test.jsp";
+        return "/welcome.jsp";
     }
 
     @RequestMapping("/updateStudent")
@@ -105,7 +105,7 @@ public class StudentController {
                              HttpServletRequest request) {
         List<Student> list = studentService.findByName(name);
         request.setAttribute("students", list);
-        return "test.jsp";
+        return "/welcome.jsp";
     }
 
     @RequestMapping("/findById")
@@ -113,7 +113,7 @@ public class StudentController {
                            HttpServletRequest request) {
         Student student = studentService.findById(id);
         request.setAttribute("student", student);
-        return "test.jsp";
+        return "/welcome.jsp";
     }
 
     @RequestMapping("/getAllStudents")
