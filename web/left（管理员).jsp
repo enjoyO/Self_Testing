@@ -46,7 +46,7 @@ $(function(){
     </div>
     	<ul class="menuson">
         <li class="active"><cite></cite><a href="/getAllStudents.action" target="rightFrame">用户信息</a><i></i></li>
-        <li><cite></cite><a href="right（成绩单）.jsp" target="rightFrame">用户成绩</a><i></i></li>
+        <li><cite></cite><a href="/getAllAnswer.action" target="rightFrame">用户成绩</a><i></i></li>
         </ul>    
     </dd>
     
@@ -62,7 +62,7 @@ $(function(){
     
     <dd><div class="title"><span><img src="images/leftico02.png" /></span>留言管理</div>
     <ul class="menuson">
-        <li><cite></cite><a href="right（留言管理）.html" target="rightFrame">留言信息</a><i></i></li>
+        <li><cite></cite><a href="/getAllMessages.action" target="rightFrame">留言信息</a><i></i></li>
     </ul>
     
     </dd>   

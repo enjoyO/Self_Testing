@@ -812,10 +812,10 @@ h2 {
     width: 345px;
     height: 32px;
     line-height: 32px;
-    border-top: solid 1px #a7b5bc;
-    border-left: solid 1px #a7b5bc;
-    border-right: solid 1px #ced9df;
-    border-bottom: solid 1px #ced9df;
+    border-top: 1px solid #a7b5bc;
+    border-left: 1px solid #a7b5bc;
+    border-right: 1px solid #ced9df;
+    border-bottom: 1px solid #ced9df;
     background: url(../images/inputbg.gif) repeat-x;
     text-indent: 10px;
 }

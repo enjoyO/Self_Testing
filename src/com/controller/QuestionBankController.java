@@ -54,7 +54,7 @@ public class QuestionBankController {
     @RequestMapping("/updateQuestion")
     public String updateQuestion(QuestionBank questionBank){
         questionBankService.updateQuestion(questionBank);
-        return "/getAllQuestions.action";
+        return "/toPaperMan.action";
     }
 
     @RequestMapping("/findQuestions")

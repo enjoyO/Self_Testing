@@ -69,6 +69,10 @@ public class TestPaperController {
     public String updatePaper(TestPaper paper) {
         TestPaper p = testPaperService.modifyPaper(paper.getId());
         p.setQuestionId(paper.getQuestionId());
+        p.setScore(paper.getScore());
+        p.setTestName(paper.getTestName());
+        p.setTimes(paper.getTimes());
+        p.setTotalQuestion(p.getTotalQuestion());
         testPaperService.updatePaper(p);
         return "/getAllPapers.action";
     }

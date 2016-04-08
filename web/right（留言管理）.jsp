@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="s" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
@@ -8,7 +9,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>成绩单</title>
+<title>留言管理</title>
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript">
@@ -105,8 +106,8 @@ $(document).ready(function(){
 	<div class="place">
     <span>位置：</span>
     <ul class="placeul">
-    <li><a href="#">用户管理</a></li>
-    <li><a href="#">用户成绩</a></li>
+    <li><a href="#">留言管理</a></li>
+    <li><a href="#">留言信息</a></li>
     </ul>
     </div>
     
@@ -125,48 +126,80 @@ $(document).ready(function(){
     <table class="tablelist">
     	<thead>
     	<tr>
-        <th></th>
+        <th><input name="" type="checkbox" value="" checked="checked"/></th>
         <th>学号<i class="sort"><img src="images/px.gif" /></i></th>
         <th>姓名</th>
-        <th>试卷</th>
-        <th>成绩</th>
+        <th>留言内容</th>
+        <th>回复信息</th>
+        <th>时间</th>
+        <th>操作</th>
         </tr>
         </thead>
         <tbody>
 
-        <c:forEach items="${requestScope.answers}" var="answer" varStatus="st">
-        <tr>
-        <td><input name="" type="checkbox" value="" /></td>
-        <td>${answer.studentId}</td>
-        <td>${requestScope.students[st.index].name}</td>
-        <td>${requestScope.papers[st.index].testName}</td>
-        <td>${answer.score}</td>
-        </tr>
-        </c:forEach>
-
+        <s:forEach items="${requestScope.allMessages}" var="message" varStatus="st">
+            <tr>
+            <td><input name="" type="checkbox" value="" /></td>
+            <td>${message.studentId}</td>
+            <td>${requestScope.students[st.index].name}</td>
+            <td>${message.message}</td>
+            <td>${message.reply}</td>
+            <td>${message.times}</td>
+            <td><a href="#" class="tablelink" ><span class="click2">回复</span></a>      <a href="#" class="tablelink"><span class="click3">删除</span></a></td>
+            </tr>
+        </s:forEach>
         </tbody>
     </table>
+    
+
+
+
+
+
+    </div>
+
+    <form action="" method="post">
+        <div class="tip2">
+        <div class="tiptop"><span>回复</span><a></a></div>
+        <div class="tipinfo">
+        <span><img src="images/ticon.png" /></span>
+        <div class="tipright">
+        <div class="kuang"> 回复：<input type="text" class="inputborder1" name="reply" placeholder="　输入回复" value=""></div>
+        </div>
+        </div>
+
+        <div class="tipbtn">
+        <input name="" type="button"  class="sure" value="确定" />&nbsp;
+        <input name="" type="button"  class="cancel" value="取消" />
+        </div>
+
+    </div>
+
+</form>
 
     
     </div>
-    <form action="/findByStuId.action" method="post">
+
+    
+    
+    </div>
     <div class="tip4">
-        <div class="tiptop"><span>查询成绩</span><a></a></div>
+        <div class="tiptop"><span>查询留言</span><a></a></div>
         
       <div class="tipinfo">
         <span><img src="images/ticon.png" /></span>
         <div class="tipright">
-        <div class="kuang"> 学号：<input type="text" class="inputborder1" name="stuId" placeholder="　输入学号" value=""></div>
+        <div class="kuang"> 内容：<input type="text" class="inputborder1" name="" placeholder="　输入内容" value=""></div>
         </div>
         </div>
         
         <div class="tipbtn">
-        <input type="submit"  class="sure" value="确定" />&nbsp;
-        <input type="button"  class="cancel" value="取消" />
+        <input name="" type="button"  class="sure" value="确定" />&nbsp;
+        <input name="" type="button"  class="cancel" value="取消" />
         </div>
     
     </div>
-    </form>
+    
     
     
     

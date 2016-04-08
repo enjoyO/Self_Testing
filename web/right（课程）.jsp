@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
@@ -162,6 +163,7 @@ $(document).ready(function(){
     </script>
 
     <form action="/addSubject.action" method="post"/>
+
         <div class="tip1">
             <div class="tiptop"><span>添加课程</span><a></a></div>
 
@@ -178,7 +180,7 @@ $(document).ready(function(){
             <input name="" type="button"  class="cancel" value="取消" />
             </div>
         </div>
-    </div>
+    </form>
     
     
     

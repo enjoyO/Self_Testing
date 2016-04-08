@@ -68,7 +68,7 @@
     <span>位置：</span>
     <ul class="placeul">
         <li><a href="#">自测管理</a></li>
-        <li><a href="tab （试题管理）.jsp">自测试题</a></li>
+        <li><a href="/toPaperMan.action">自测试题</a></li>
         <li><a href="#">计算机组成原理期中试题</a></li>
     </ul>
 </div>

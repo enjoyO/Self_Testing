@@ -45,6 +45,7 @@ public class SubjectController {
 
     @RequestMapping("/addSubject")
     public String addSubject(Subject subject){
+        System.out.println(subject.getTeacher());
         subjectService.addSubject(subject);
         return "/getAllSubject.action";
     }
@@ -64,7 +65,11 @@ public class SubjectController {
 
     @RequestMapping("/updateSubject")
     public String updateSubject(Subject subject){
-        subjectService.updateSubject(subject);
+        System.out.println(subject.getId());
+        Subject subject1 = subjectService.modifySubject(subject.getId());
+        subject1.setClassName(subject.getClassName());
+        subject1.setTeacher(subject.getTeacher());
+        subjectService.updateSubject(subject1);
         return "/getAllSubject.action";
     }
 
