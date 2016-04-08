@@ -36,13 +36,14 @@ public class MessagesController {
 
     @RequestMapping("/addMessage")
     public String addMessage(Messages messages) {
+        messages.setStudentId(1);
         messages.setTimes(Dates.getDate());
         messagesService.addMessage(messages);
-        return "/welcome.jsp";
+        return "/toReply.action";
     }
 
     @RequestMapping("/deleteMessage")
-    public void deleteMessage(int id) {
+    public void deleteMessage(@RequestParam(value = "id") int id) {
         messagesService.deleteMessage(id);
     }
 
@@ -50,8 +51,13 @@ public class MessagesController {
     public String findMessages(@RequestParam(value = "info") String info,
                                HttpServletRequest request) {
         List<Messages> list = messagesService.findMessages(info);
-        request.setAttribute("messages", list);
-        return "/welcome.jsp";
+        List<Student> list1 = new ArrayList<>();
+        for (int i = 0; i < list.size(); i++) {
+            list1.add(studentService.modify(list.get(i).getStudentId()));
+        }
+        request.setAttribute("allMessages", list);
+        request.setAttribute("students",list1);
+        return "right（留言管理）.jsp";
     }
 
     @RequestMapping("/getMessage")
@@ -65,8 +71,10 @@ public class MessagesController {
     @RequestMapping("/reply")
     public String reply(@RequestParam(value = "id") int id,
                         @RequestParam(value = "content") String content) {
-        messagesService.reply(id, content);
-        return "/welcome.jsp";
+        Messages messages = messagesService.getMessage(id);
+        messages.setReply(content);
+        messagesService.reply(messages);
+        return "/getAllMessages.action";
     }
 
     @RequestMapping("/getAllMessages")
@@ -79,5 +87,17 @@ public class MessagesController {
         request.setAttribute("allMessages", list);
         request.setAttribute("students",list1);
         return "right（留言管理）.jsp";
+    }
+
+    @RequestMapping("/toReply")
+    public String toReply(HttpServletRequest request){
+        List<Messages> list = messagesService.getAllMessages();
+        List<Student> list1 = new ArrayList<>();
+        for (int i = 0; i < list.size(); i++) {
+            list1.add(studentService.modify(list.get(i).getStudentId()));
+        }
+        request.setAttribute("allMessages", list);
+        request.setAttribute("students",list1);
+        return "tab（留言反馈）.jsp";
     }
 }

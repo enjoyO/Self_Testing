@@ -175,7 +175,13 @@ $(document).ready(function(){
     <script type="text/javascript">
 	$('.tablelist tbody tr:odd').addClass('odd');
 	</script>
-
+    <script>
+        $(function(){
+            if(${sessionScope.student.name eq null}){
+                window.location.href="login.jsp";
+            }
+        })
+    </script>
 </body>
 
 </html>

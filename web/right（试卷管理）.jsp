@@ -250,7 +250,13 @@
 
 
 </div>
-
+<script>
+    $(function(){
+        if(${sessionScope.student.name eq null}){
+            window.location.href="login.jsp";
+        }
+    })
+</script>
 <script type="text/javascript">
     $('.tablelist tbody tr:odd').addClass('odd');
 </script>

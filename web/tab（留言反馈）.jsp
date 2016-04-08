@@ -1,25 +1,22 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+﻿<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="s" uri="http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%
+	String path = request.getContextPath();
+%>
+<!-- saved from url=(0060)http://127.0.0.1/dede/login.php?gotopage=%2Fdede%2Findex.php -->
 <html xmlns="http://www.w3.org/1999/xhtml">
-
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>答疑中心</title>
 
 <link rel="stylesheet" href="css/ask.css" type="text/css">
 <link href="css/style.css" rel="stylesheet" type="text/css" />
-<link href="css/select.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
-<script type="text/javascript" src="js/select-ui.min.js"></script>
-<script type="text/javascript" src="editor/kindeditor.js"></script>
 
 <script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript">
-    KE.show({
-        id : 'content7',
-        cssPath : './index.css'
-    });
-  </script>
 
 
 </head>
@@ -48,18 +45,46 @@
   	<div id="tab1" class="tabson">
     
     <div class="formtext">Hi，<b>同学</b>，欢迎您使用留言反馈功能！</div>
-    
+
+
+		<table class="tablelist">
+			<thead>
+			<tr>
+				<th>学号<i class="sort"><img src="images/px.gif" /></i></th>
+				<th>姓名</th>
+				<th>留言内容</th>
+				<th>回复信息</th>
+				<th>时间</th>
+			</tr>
+			</thead>
+			<tbody>
+
+			<s:forEach items="${requestScope.allMessages}" var="message" varStatus="st">
+				<tr>
+					<td>${message.studentId}</td>
+					<td>${requestScope.students[st.index].name}</td>
+					<td>${message.message}</td>
+					<td>${message.reply}</td>
+					<td>${message.times}</td></tr>
+			</s:forEach>
+
+			</tbody>
+		</table>
+
+
+    <br/><br/>
+	<form action="/addMessage.action" method="post">
     <ul class="forminfo">
 
     <li><label>留言内容<b>*</b></label>
     
 
-    <textarea id="content7" name="content" style="width:700px;height:250px;visibility:hidden;"></textarea>
-    
+    <textarea name="message" style="width:700px;height:250px"></textarea>
+
     </li>
-    <li><label>&nbsp;</label><input name="" type="button" class="btn" value="马上发布"/></li>
+    <li><label>&nbsp;</label><input type="submit" class="btn" value="确认留言"/></li>
     </ul>
-    
+	</form>
     </div> 
     
     
@@ -68,37 +93,6 @@
     
     </div>
 
-
-
-<script type="text/javascript" src="js/tipswindown.js"></script>
-<script type="text/javascript">
-/*
-*弹出本页指定ID的内容于窗口
-*id 指定的元素的id
-*title:	window弹出窗的标题
-*width:	窗口的宽,height:窗口的高
-*/
-function showTipsWindown(title,id,width,height){
-	tipsWindown(title,"id:"+id,width,height,"true","","true",id);
-}
-function confirmTerm(s) {
-	parent.closeWindown();
-	if(s == 1) {
-		parent.document.getElementById("isread").checked = true;
-	}
-}
-//弹出层调用
-function popTips(){
-	showTipsWindown("答疑中心", 'simTestContent', 620, 250);
-	$("#isread").attr("checked", false);
-}
-$(document).ready(function(){
-	
-	$("#isread").click(popTips);
-	$("#isread-text").click(popTips);
-	
-});
-</script>
 
 <div class="kf_qq_r"><a id="isread-text" href="#"></a></div>
 
@@ -156,7 +150,13 @@ $(document).ready(function(){
 		</div>
 	</div>
 </div>
-
-
+</div>
+<script>
+	$(function(){
+		if(${sessionScope.student.name eq null}){
+			window.location.href="login.jsp";
+		}
+	})
+</script>
 </body>
 </html>

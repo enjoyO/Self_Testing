@@ -2,36 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b02fd632-5c73-4438-8a75-93ff629b58b9" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/test.jsp" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/right（留言管理）.html" afterPath="$PROJECT_DIR$/web/right（留言管理）.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/controller/AnswerController.class" afterPath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/controller/AnswerController.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/main (管理员).jsp" afterPath="$PROJECT_DIR$/web/main(管理员).jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/tab（留言反馈）.html" afterPath="$PROJECT_DIR$/web/tab（留言反馈）.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/controller/MessagesController.class" afterPath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/controller/MessagesController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/controller/QuestionBankController.class" afterPath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/controller/QuestionBankController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/controller/StudentController.class" afterPath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/controller/StudentController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/controller/SubjectController.class" afterPath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/controller/SubjectController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/controller/TeacherController.class" afterPath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/controller/TeacherController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/controller/TestPaperController.class" afterPath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/controller/TestPaperController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Self_Testing/com/controller/AnswerController.class" afterPath="$PROJECT_DIR$/out/production/Self_Testing/com/controller/AnswerController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/service/MessagesService.class" afterPath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/service/MessagesService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Self_Testing/com/controller/MessagesController.class" afterPath="$PROJECT_DIR$/out/production/Self_Testing/com/controller/MessagesController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Self_Testing/com/controller/QuestionBankController.class" afterPath="$PROJECT_DIR$/out/production/Self_Testing/com/controller/QuestionBankController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Self_Testing/com/controller/StudentController.class" afterPath="$PROJECT_DIR$/out/production/Self_Testing/com/controller/StudentController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Self_Testing/com/controller/SubjectController.class" afterPath="$PROJECT_DIR$/out/production/Self_Testing/com/controller/SubjectController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Self_Testing/com/controller/TeacherController.class" afterPath="$PROJECT_DIR$/out/production/Self_Testing/com/controller/TeacherController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Self_Testing/com/controller/TestPaperController.class" afterPath="$PROJECT_DIR$/out/production/Self_Testing/com/controller/TestPaperController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Self_Testing/com/service/MessagesService.class" afterPath="$PROJECT_DIR$/out/production/Self_Testing/com/service/MessagesService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/dispatcher-servlet.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/controller/AnswerController.java" afterPath="$PROJECT_DIR$/src/com/controller/AnswerController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/controller/MessagesController.java" afterPath="$PROJECT_DIR$/src/com/controller/MessagesController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/controller/QuestionBankController.java" afterPath="$PROJECT_DIR$/src/com/controller/QuestionBankController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/controller/SubjectController.java" afterPath="$PROJECT_DIR$/src/com/controller/SubjectController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/controller/TestPaperController.java" afterPath="$PROJECT_DIR$/src/com/controller/TestPaperController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/service/MessagesService.java" afterPath="$PROJECT_DIR$/src/com/service/MessagesService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/style.css" afterPath="$PROJECT_DIR$/web/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/imglist1 （进入自测）.jsp" afterPath="$PROJECT_DIR$/web/imglist1 （进入自测）.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/imglist1（答题）.jsp" afterPath="$PROJECT_DIR$/web/imglist1（答题）.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/left（学生）.jsp" afterPath="$PROJECT_DIR$/web/left（学生）.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/left（管理员).jsp" afterPath="$PROJECT_DIR$/web/left（管理员).jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/login.jsp" afterPath="$PROJECT_DIR$/web/login.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/main（学生）.jsp" afterPath="$PROJECT_DIR$/web/main（学生）.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/right（成绩单）.jsp" afterPath="$PROJECT_DIR$/web/right（成绩单）.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/right（用户）.jsp" afterPath="$PROJECT_DIR$/web/right（用户）.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/right（留言管理）.jsp" afterPath="$PROJECT_DIR$/web/right（留言管理）.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/right（试卷管理）.jsp" afterPath="$PROJECT_DIR$/web/right（试卷管理）.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/right（课程）.jsp" afterPath="$PROJECT_DIR$/web/right（课程）.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/tab （试题管理）.jsp" afterPath="$PROJECT_DIR$/web/tab （试题管理）.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/tab （试题计组）.jsp" afterPath="$PROJECT_DIR$/web/tab （试题计组）.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/top.jsp" afterPath="$PROJECT_DIR$/web/top.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/welcome.jsp" afterPath="$PROJECT_DIR$/web/welcome.jsp" />
     </list>
     <ignored path="Self_Testing.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,18 +50,7 @@
     <favorites_list name="Self_Testing" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="right（留言管理）.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/right（留言管理）.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.53333336">
-              <caret line="166" column="119" selection-start-line="166" selection-start-column="119" selection-end-line="166" selection-end-column="119" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -85,13 +71,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/controller/MarkController.java" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/web/css/login.css" />
-        <option value="$PROJECT_DIR$/src/com/utils/GeneratorSqlmap.java" />
         <option value="$PROJECT_DIR$/src/com/utils/Dates.java" />
         <option value="$PROJECT_DIR$/src/generatorConfig.xml" />
-        <option value="$PROJECT_DIR$/src/com/service/MessagesService.java" />
         <option value="$PROJECT_DIR$/src/com/service/QuestionBankService.java" />
         <option value="$PROJECT_DIR$/web/seller-test.html" />
         <option value="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" />
@@ -100,42 +81,47 @@
         <option value="$PROJECT_DIR$/src/com/service/TeacherService.java" />
         <option value="$PROJECT_DIR$/web/main（学生）.html" />
         <option value="$PROJECT_DIR$/web/top.html" />
-        <option value="$PROJECT_DIR$/web/top.jsp" />
         <option value="$PROJECT_DIR$/web/right（用户）.html" />
         <option value="$PROJECT_DIR$/src/com/controller/TeacherController.java" />
-        <option value="$PROJECT_DIR$/web/main (管理员).jsp" />
         <option value="$PROJECT_DIR$/web/test.jsp" />
         <option value="$PROJECT_DIR$/src/com/service/StudentService.java" />
         <option value="$PROJECT_DIR$/web/right（课程）.html" />
-        <option value="$PROJECT_DIR$/web/right（用户）.jsp" />
         <option value="$PROJECT_DIR$/web/tab （试题管理）.html" />
-        <option value="$PROJECT_DIR$/web/right（试卷管理）.jsp" />
         <option value="$PROJECT_DIR$/web/imglist1（答题）.html" />
         <option value="$PROJECT_DIR$/web/imglist1 （进入试题）.jsp" />
         <option value="$PROJECT_DIR$/web/imglist1 （进入自测）.html" />
-        <option value="$PROJECT_DIR$/web/main（学生）.jsp" />
-        <option value="$PROJECT_DIR$/web/left（学生）.jsp" />
-        <option value="$PROJECT_DIR$/web/imglist1 （进入自测）.jsp" />
         <option value="$PROJECT_DIR$/src/com/service/AnswerService.java" />
         <option value="$PROJECT_DIR$/src/com/service/TestPaperService.java" />
         <option value="$PROJECT_DIR$/src/com/controller/StudentController.java" />
-        <option value="$PROJECT_DIR$/web/login.jsp" />
-        <option value="$PROJECT_DIR$/web/imglist1（答题）.jsp" />
         <option value="$PROJECT_DIR$/src/com/controller/AnswerController.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" />
-        <option value="$PROJECT_DIR$/src/com/controller/MessagesController.java" />
-        <option value="$PROJECT_DIR$/web/left（管理员).jsp" />
-        <option value="$PROJECT_DIR$/web/right（成绩单）.jsp" />
-        <option value="$PROJECT_DIR$/web/right（留言管理）.jsp" />
         <option value="$PROJECT_DIR$/src/com/controller/TestPaperController.java" />
         <option value="$PROJECT_DIR$/src/com/controller/QuestionBankController.java" />
-        <option value="$PROJECT_DIR$/web/css/style.css" />
         <option value="$PROJECT_DIR$/web/css/select.css" />
-        <option value="$PROJECT_DIR$/web/tab （试题管理）.jsp" />
         <option value="$PROJECT_DIR$/src/com/service/SubjectService.java" />
         <option value="$PROJECT_DIR$/src/com/controller/SubjectController.java" />
+        <option value="$PROJECT_DIR$/src/com/service/MessagesService.java" />
+        <option value="$PROJECT_DIR$/web/css/style.css" />
+        <option value="$PROJECT_DIR$/web/tab（留言反馈）.html" />
+        <option value="$PROJECT_DIR$/src/com/controller/MessagesController.java" />
+        <option value="$PROJECT_DIR$/web/main（学生）.jsp" />
+        <option value="$PROJECT_DIR$/web/imglist1 （进入自测）.jsp" />
+        <option value="$PROJECT_DIR$/web/imglist1（答题）.jsp" />
+        <option value="$PROJECT_DIR$/web/left（学生）.jsp" />
+        <option value="$PROJECT_DIR$/web/right（用户）.jsp" />
+        <option value="$PROJECT_DIR$/web/tab（留言反馈）.jsp" />
+        <option value="$PROJECT_DIR$/web/login.jsp" />
+        <option value="$PROJECT_DIR$/web/right（成绩单）.jsp" />
+        <option value="$PROJECT_DIR$/web/right（留言管理）.jsp" />
+        <option value="$PROJECT_DIR$/web/right（试卷管理）.jsp" />
         <option value="$PROJECT_DIR$/web/right（课程）.jsp" />
+        <option value="$PROJECT_DIR$/web/tab （试题管理）.jsp" />
         <option value="$PROJECT_DIR$/web/tab （试题计组）.jsp" />
+        <option value="$PROJECT_DIR$/web/welcome.jsp" />
+        <option value="$PROJECT_DIR$/web/top.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/web/main (管理员).jsp" />
+        <option value="$PROJECT_DIR$/web/left（管理员).jsp" />
       </list>
     </option>
   </component>
@@ -236,24 +222,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Self_Testing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Self_Testing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -933,7 +901,7 @@
       <workItem from="1459943342026" duration="38614000" />
       <workItem from="1460109293249" duration="6216000" />
       <workItem from="1460118095074" duration="1054000" />
-      <workItem from="1460125352913" duration="10003000" />
+      <workItem from="1460125352913" duration="14715000" />
     </task>
     <task id="LOCAL-00001" summary="add README.md">
       <created>1458802515526</created>
@@ -1007,15 +975,21 @@
       <option name="project" value="LOCAL" />
       <updated>1460128657305</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="fix bugs">
+      <created>1460137016463</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1460137016463</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119283000" />
+    <option name="totallyTimeSpent" value="123995000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1030,7 +1004,7 @@
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22108346" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22108346" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1038,7 +1012,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35804418" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41324922" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1059,7 +1033,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35804418" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41324922" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1096,7 +1070,8 @@
     <MESSAGE value="add Demo" />
     <MESSAGE value="add a lot" />
     <MESSAGE value="add student test" />
-    <option name="LAST_COMMIT_MESSAGE" value="add student test" />
+    <MESSAGE value="fix bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bugs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1180,33 +1155,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/service/StudentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.013192612">
-          <caret line="60" column="35" selection-start-line="59" selection-start-column="38" selection-end-line="60" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/models/Subject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1983471">
           <caret line="5" column="28" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/top.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4125874">
-          <caret line="42" column="63" selection-start-line="42" selection-start-column="63" selection-end-line="42" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46181172">
-          <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1222,14 +1174,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/main (管理员).jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6296296">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1252,14 +1196,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.72527474">
           <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/left（学生）.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.5737705">
-          <caret line="46" column="70" selection-start-line="46" selection-start-column="70" selection-end-line="46" selection-end-column="70" />
           <folding />
         </state>
       </provider>
@@ -1299,54 +1235,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="7.048951">
-          <caret line="168" column="35" selection-start-line="168" selection-start-column="35" selection-end-line="168" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/imglist1 （进入自测）.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.969696">
-          <caret line="56" column="6" selection-start-line="56" selection-start-column="6" selection-end-line="56" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/main（学生）.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3023952">
-          <caret line="14" column="45" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/right（用户）.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/welcome.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46153846">
-          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/tab（留言反馈）.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/controller/AnswerController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1360,22 +1248,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/imglist1（答题）.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-33.454544">
-          <caret line="91" column="13" selection-start-line="91" selection-start-column="13" selection-end-line="91" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/right（试卷管理）.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9560117">
-          <caret line="197" column="40" selection-start-line="197" selection-start-column="40" selection-end-line="197" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/service/AnswerService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.1684492">
@@ -1384,63 +1256,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/service/MessagesService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.9251337">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3431085">
           <caret line="11" column="128" selection-start-line="11" selection-start-column="128" selection-end-line="11" selection-end-column="128" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/right（成绩单）.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21052632">
-          <caret line="116" column="28" selection-start-line="116" selection-start-column="28" selection-end-line="116" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/controller/MessagesController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16533333">
-          <caret line="71" column="36" selection-start-line="71" selection-start-column="22" selection-end-line="71" selection-end-column="36" />
-          <folding>
-            <element signature="e#629#630#0" expanded="true" />
-            <element signature="e#666#667#0" expanded="true" />
-            <element signature="e#734#735#0" expanded="true" />
-            <element signature="e#786#787#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/controller/StudentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/left（管理员).jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.1515152">
-          <caret line="57" column="52" selection-start-line="57" selection-start-column="34" selection-end-line="57" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/controller/TestPaperController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="74" column="49" selection-start-line="74" selection-start-column="49" selection-end-line="74" selection-end-column="49" />
           <folding />
         </state>
       </provider>
@@ -1461,32 +1280,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.909091">
-          <caret line="815" column="35" selection-start-line="815" selection-start-column="35" selection-end-line="815" selection-end-column="35" />
-          <folding>
-            <marker date="1460135393193" expanded="true" signature="607:631" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/tab （试题计组）.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0434783">
-          <caret line="70" column="39" selection-start-line="70" selection-start-column="39" selection-end-line="70" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/tab （试题管理）.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6086956">
-          <caret line="11" column="62" selection-start-line="11" selection-start-column="62" selection-end-line="11" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/service/SubjectService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.04761905">
@@ -1498,14 +1291,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/right（课程）.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34920636">
-          <caret line="190" column="7" selection-start-line="190" selection-start-column="7" selection-end-line="190" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/controller/SubjectController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.52380955">
@@ -1514,10 +1299,202 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/service/MessagesService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20826447">
+          <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+          <folding>
+            <element signature="e#1134#1135#0" expanded="true" />
+            <element signature="e#1202#1203#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7209302">
+          <caret line="1370" column="17" selection-start-line="1370" selection-start-column="17" selection-end-line="1370" selection-end-column="17" />
+          <folding>
+            <marker date="1460139700095" expanded="true" signature="607:631" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/controller/MessagesController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40991735">
+          <caret line="41" column="31" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
+          <folding>
+            <element signature="e#1357#1358#0" expanded="true" />
+            <element signature="e#1406#1407#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/imglist1 （进入自测）.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.74825174">
+          <caret line="73" column="13" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/imglist1（答题）.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8321678">
+          <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/service/StudentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.46938777">
+          <caret line="60" column="35" selection-start-line="59" selection-start-column="38" selection-end-line="60" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.53846157">
+          <caret line="82" column="79" selection-start-line="82" selection-start-column="79" selection-end-line="82" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/controller/TestPaperController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3322314">
+          <caret line="94" column="20" selection-start-line="94" selection-start-column="20" selection-end-line="94" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/controller/StudentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.07933884">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/right（用户）.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4125874">
+          <caret line="249" column="0" selection-start-line="249" selection-start-column="0" selection-end-line="255" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/tab （试题管理）.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.878788">
+          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/tab （试题计组）.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.545455">
+          <caret line="71" column="9" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/tab（留言反馈）.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.878788">
+          <caret line="159" column="9" selection-start-line="159" selection-start-column="9" selection-end-line="159" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/right（成绩单）.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8321678">
+          <caret line="183" column="13" selection-start-line="183" selection-start-column="13" selection-end-line="183" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/right（留言管理）.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53333336">
-          <caret line="166" column="119" selection-start-line="166" selection-start-column="119" selection-end-line="166" selection-end-column="119" />
+        <state vertical-scroll-proportion="0.6293706">
+          <caret line="110" column="9" selection-start-line="110" selection-start-column="9" selection-end-line="110" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/right（试卷管理）.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.66433567">
+          <caret line="258" column="9" selection-start-line="258" selection-start-column="9" selection-end-line="258" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/right（课程）.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8741259">
+          <caret line="109" column="9" selection-start-line="109" selection-start-column="9" selection-end-line="109" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/welcome.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7132867">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/top.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.2237763">
+          <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.2258065">
+          <caret line="45" column="31" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/main(管理员).jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8852459">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/main（学生）.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.030303">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/left（管理员).jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.8484848">
+          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/left（学生）.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.62237763">
+          <caret line="61" column="13" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
           <folding />
         </state>
       </provider>

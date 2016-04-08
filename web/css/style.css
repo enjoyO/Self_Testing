@@ -1366,3 +1366,7 @@ h2 {
     border-radius: 3px;
     behavior: url(js/pie.htc);
 }
+textarea{
+    border: 1px solid black;
+    outline: none;
+}

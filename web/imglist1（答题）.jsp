@@ -24,7 +24,13 @@
 
 
 <body>
-
+<script>
+    $(function(){
+        if(${sessionScope.student.name eq null}){
+            window.location.href="login.jsp";
+        }
+    })
+</script>
 <div class="place">
     <span>位置：</span>
     <ul class="placeul">

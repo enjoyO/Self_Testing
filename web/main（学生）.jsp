@@ -10,11 +10,11 @@ String path = request.getContextPath();
 <title>学生自测系统界面</title>
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 <script>
-    <%--$(function(){--%>
-      <%--if(${sessionScope.student.name eq null}){--%>
-        <%--window.location.href="login.jsp";--%>
-      <%--}--%>
-    <%--})--%>
+    $(function(){
+      if(${sessionScope.student.name eq null}){
+        window.location.href="login.jsp";
+      }
+    })
 </script>
 </head>
 <frameset rows="88,*" cols="*" frameborder="no" border="0" framespacing="0">

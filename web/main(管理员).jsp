@@ -8,6 +8,13 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>信息管理系统界面</title>
+  <script>
+    $(function(){
+      if(${sessionScope.student.name eq null}){
+        window.location.href="login.jsp";
+      }
+    })
+  </script>
 </head>
 <frameset rows="88,*" cols="*" frameborder="no" border="0" framespacing="0">
   <frame src="top.jsp" name="topFrame" scrolling="No" noresize="noresize" id="topFrame" title="topFrame" />

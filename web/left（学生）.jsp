@@ -45,7 +45,7 @@ $(function(){
     </div>
     	<ul class="menuson">
 			<li class="active"><cite></cite><a href="/toMainStu.action" target="rightFrame">进入自测</a><i></i></li>
-        <li ><cite></cite><a href="tab（留言反馈）.html" target="rightFrame">留言反馈</a><i></i></li>
+        <li ><cite></cite><a href="/toReply.action" target="rightFrame">留言反馈</a><i></i></li>
         </ul>    
     </dd>
         
@@ -53,6 +53,12 @@ $(function(){
     
     
     </dl>
-    
+	<script>
+		$(function(){
+			if(${sessionScope.student.name eq null}){
+				window.location.href="login.jsp";
+			}
+		})
+	</script>
 </body>
 </html>

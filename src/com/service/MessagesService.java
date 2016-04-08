@@ -38,9 +38,8 @@ public class MessagesService {
         return messages;
     }
 
-    public void reply(int id,String content){
-        Messages messages = this.getMessage(id);
-        messages.setReply(content);
+    public void reply(Messages messages){
+        messagesMapper.updateByPrimaryKeySelective(messages);
     }
 
     public List<Messages> getAllMessages(){

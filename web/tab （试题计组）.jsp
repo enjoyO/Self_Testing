@@ -63,6 +63,13 @@
 </head>
 
 <body>
+<script>
+    $(function(){
+        if(${sessionScope.student.name eq null}){
+            window.location.href="login.jsp";
+        }
+    })
+</script>
 <input type="hidden" class="pId" value="${requestScope.paperId}"/>
 <div class="place">
     <span>位置：</span>

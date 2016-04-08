@@ -102,7 +102,13 @@ $(document).ready(function(){
 
 
 <body>
-
+<script>
+    $(function(){
+        if(${sessionScope.student.name eq null}){
+            window.location.href="login.jsp";
+        }
+    })
+</script>
 	<div class="place">
     <span>位置：</span>
     <ul class="placeul">
@@ -145,32 +151,48 @@ $(document).ready(function(){
             <td>${message.message}</td>
             <td>${message.reply}</td>
             <td>${message.times}</td>
-            <td><a href="#" class="tablelink" ><span class="click2">回复</span></a>      <a href="#" class="tablelink"><span class="click3">删除</span></a></td>
+            <td><a href="#" class="tablelink rep" value="${message.id}"><span class="click2">回复</span></a>      <a href="#" class="tablelink del" value="${message.id}"><span class="click3">删除</span></a></td>
             </tr>
         </s:forEach>
         </tbody>
     </table>
-    
 
+    <script>
+        $(function(){
+            $(".rep").click(function(){
+                var a = $(this).attr("value");
+                $(".mid").attr("value",a);
+            })
+
+            $(".del").click(function(){
+                $(this).parents("tr").hide(400);
+                var a = $(this).attr("value");
+                $.post("/deleteMessage.action",{id:a},function(){
+
+                });
+            });
+        })
+    </script>
 
 
 
 
     </div>
 
-    <form action="" method="post">
+    <form action="/reply.action" method="post">
         <div class="tip2">
         <div class="tiptop"><span>回复</span><a></a></div>
         <div class="tipinfo">
         <span><img src="images/ticon.png" /></span>
         <div class="tipright">
-        <div class="kuang"> 回复：<input type="text" class="inputborder1" name="reply" placeholder="　输入回复" value=""></div>
+        <div class="kuang"> 回复：<input type="text" class="inputborder1" name="content" placeholder="　输入回复" value=""></div>
         </div>
         </div>
 
         <div class="tipbtn">
-        <input name="" type="button"  class="sure" value="确定" />&nbsp;
-        <input name="" type="button"  class="cancel" value="取消" />
+        <input type="hidden" name="id" class="mid" value=""/>
+        <input type="submit"  class="sure" value="确定" />&nbsp;
+        <input type="button"  class="cancel" value="取消" />
         </div>
 
     </div>
@@ -183,23 +205,24 @@ $(document).ready(function(){
     
     
     </div>
+    <form action="/findMessages.action" method="post">
     <div class="tip4">
         <div class="tiptop"><span>查询留言</span><a></a></div>
         
       <div class="tipinfo">
         <span><img src="images/ticon.png" /></span>
         <div class="tipright">
-        <div class="kuang"> 内容：<input type="text" class="inputborder1" name="" placeholder="　输入内容" value=""></div>
+        <div class="kuang"> 内容：<input type="text" class="inputborder1" name="info" placeholder="　输入内容" value=""></div>
         </div>
         </div>
         
         <div class="tipbtn">
-        <input name="" type="button"  class="sure" value="确定" />&nbsp;
-        <input name="" type="button"  class="cancel" value="取消" />
+        <input type="submit"  class="sure" value="确定" />&nbsp;
+        <input type="button"  class="cancel" value="取消" />
         </div>
     
     </div>
-    
+    </form>
     
     
     

@@ -64,8 +64,14 @@ $(function(){
     
     <div class="clear"></div>
     </div>
-    
-   
+
+    <script>
+        $(function(){
+            if(${sessionScope.student.name eq null}){
+                window.location.href="login.jsp";
+            }
+        })
+    </script>
     
 
 </body>
