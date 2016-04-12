@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -112,8 +113,10 @@ public class AnswerController {
     }
 
     @RequestMapping("/examState")
-    public void examState(HttpServletRequest request){
-        int stuId = 1;
+    public void examState(HttpServletRequest request,HttpSession session){
+        Student student = (Student)session.getAttribute("student");
+        int id = student.getId();
+        int stuId = id;
         List<Integer> list = answerService.examState(stuId);
         request.setAttribute("paperIds",list);
     }

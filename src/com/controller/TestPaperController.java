@@ -1,6 +1,7 @@
 package com.controller;
 
 import com.models.QuestionBank;
+import com.models.Student;
 import com.models.TestPaper;
 import com.service.AnswerService;
 import com.service.QuestionBankService;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -93,8 +95,10 @@ public class TestPaperController {
     }
 
     @RequestMapping("/toMainStu")
-    public String toMainStu(HttpServletRequest request){
-        List<Integer> list1 = answerService.examState(1);
+    public String toMainStu(HttpServletRequest request, HttpSession session){
+        Student student = (Student)session.getAttribute("student");
+        int id = student.getId();
+        List<Integer> list1 = answerService.examState(id);
         List<TestPaper> list = testPaperService.getStuPaper(list1);
         request.setAttribute("allPapers",list);
         return "imglist1 （进入自测）.jsp";

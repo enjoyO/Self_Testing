@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -35,8 +36,10 @@ public class MessagesController {
     }
 
     @RequestMapping("/addMessage")
-    public String addMessage(Messages messages) {
-        messages.setStudentId(1);
+    public String addMessage(Messages messages, HttpSession session) {
+        Student student = (Student)session.getAttribute("student");
+        int id = student.getId();
+        messages.setStudentId(id);
         messages.setTimes(Dates.getDate());
         messagesService.addMessage(messages);
         return "/toReply.action";
