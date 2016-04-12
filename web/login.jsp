@@ -117,6 +117,10 @@
             var a = $("input[name='id_1']").val();
             var b = $("input[name='password_1']").val();
             var c = $("input[name='code_1']").val();
+            if(!isNaN(a)){
+                alert("请数字数字！");
+                return;
+            }
             if(a==""){
                 alert("请输入学号！");
                 return;

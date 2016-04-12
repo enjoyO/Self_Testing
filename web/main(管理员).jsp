@@ -10,7 +10,7 @@
 <title>信息管理系统界面</title>
   <script>
     $(function(){
-      if(${sessionScope.student.name eq null}){
+      if(${sessionScope.teacher.username eq null}){
         window.location.href="login.jsp";
       }
     })
