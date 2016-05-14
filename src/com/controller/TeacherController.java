@@ -32,7 +32,7 @@ public class TeacherController {
         if(teacher==null){
             response.getWriter().print("wrong");
         }else{
-            session.setAttribute("admin",teacher);
+            session.setAttribute("teacher",teacher);
         }
     }
 

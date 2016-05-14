@@ -249,7 +249,7 @@
 
 <script>
     $(function(){
-        if(${sessionScope.student.name eq null}){
+        if(${sessionScope.teacher.username eq null}){
             window.location.href="login.jsp";
         }
     })
