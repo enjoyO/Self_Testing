@@ -8,7 +8,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>计组试题</title>
+    <title>试题库</title>
     <link href="css/style.css" rel="stylesheet" type="text/css"/>
     <link href="css/select.css" rel="stylesheet" type="text/css"/>
     <script type="text/javascript" src="js/jquery.js"></script>
@@ -76,7 +76,7 @@
     <ul class="placeul">
         <li><a href="#">自测管理</a></li>
         <li><a href="/toPaperMan.action">自测试题</a></li>
-        <li><a href="#">计算机组成原理期中试题</a></li>
+        <li><a href="#">试题库</a></li>
     </ul>
 </div>
 

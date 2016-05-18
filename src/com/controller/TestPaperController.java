@@ -84,14 +84,14 @@ public class TestPaperController {
                             HttpServletRequest request){
         List<TestPaper> list = testPaperService.findPapers(paperName);
         request.setAttribute("allPapers",list);
-        return "right（试卷管理）.jsp";
+        return "/right_manage_test_paper.jsp";
     }
 
     @RequestMapping("/getAllPapers")
     public String getAllPapers(HttpServletRequest request){
         List<TestPaper> list = testPaperService.getAllPapers();
         request.setAttribute("allPapers",list);
-        return "right（试卷管理）.jsp";
+        return "/right_manage_test_paper.jsp";
     }
 
     @RequestMapping("/toMainStu")
@@ -101,7 +101,7 @@ public class TestPaperController {
         List<Integer> list1 = answerService.examState(id);
         List<TestPaper> list = testPaperService.getStuPaper(list1);
         request.setAttribute("allPapers",list);
-        return "imglist1 （进入自测）.jsp";
+        return "/enter_self_test.jsp";
     }
 
     @RequestMapping("/getPaper")
@@ -122,6 +122,6 @@ public class TestPaperController {
         }
         request.setAttribute("questions",list);
         request.setAttribute("paperId",paperId);
-        return "imglist1（答题）.jsp";
+        return "/imglist_answer_questions.jsp";
     }
 }

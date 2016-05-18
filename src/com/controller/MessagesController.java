@@ -60,7 +60,7 @@ public class MessagesController {
         }
         request.setAttribute("allMessages", list);
         request.setAttribute("students",list1);
-        return "right（留言管理）.jsp";
+        return "/right_manage_message.jsp";
     }
 
     @RequestMapping("/getMessage")
@@ -89,7 +89,7 @@ public class MessagesController {
         }
         request.setAttribute("allMessages", list);
         request.setAttribute("students",list1);
-        return "right（留言管理）.jsp";
+        return "/right_manage_message.jsp";
     }
 
     @RequestMapping("/toReply")
@@ -101,6 +101,6 @@ public class MessagesController {
         }
         request.setAttribute("allMessages", list);
         request.setAttribute("students",list1);
-        return "tab（留言反馈）.jsp";
+        return "/tab_leave_message.jsp";
     }
 }

@@ -78,14 +78,14 @@ public class SubjectController {
                                HttpServletRequest request){
         List<Subject> list = subjectService.findSubjects(name);
         request.setAttribute("allSubjects",list);
-        return "right（课程）.jsp";
+        return "/right_subject.jsp";
     }
 
     @RequestMapping("/getAllSubject")
     public String getAllSubject(HttpServletRequest request){
         List<Subject> list = subjectService.getAllSubjects();
         request.setAttribute("allSubjects",list);
-        return "right（课程）.jsp";
+        return "/right_subject.jsp";
     }
 
     @RequestMapping("/toPaperMan")
@@ -96,6 +96,6 @@ public class SubjectController {
         request.setAttribute("allPapers",list1);
         List<QuestionBank> list2 = questionBankService.getAllQuestions();
         request.setAttribute("allQuestions",list2);
-        return "tab （试题管理）.jsp";
+        return "/tab_manage_questions.jsp";
     }
 }

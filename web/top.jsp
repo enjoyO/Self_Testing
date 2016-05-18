@@ -36,21 +36,18 @@ $(function(){
     <ul>
     <li><span><img src="images/help.png" title="帮助"  class="helpimg"/></span><a href="#">帮助</a></li>
     <li><a href="#">关于</a></li>
-    <li><a href="login.jsp" target="_parent">退出</a></li>
+    <li><a href="/quit.action" target="_parent">退出</a></li>
     </ul>
      
     <div class="user">
-    <span><c:out value="${sessionScope.student.name}"/> </span>
-
+        <c:if test="${sessionScope.student.name eq null}">
+            <span><c:out value="${sessionScope.admin.username}"/> </span>
+        </c:if>
+        <c:if test="${sessionScope.admin.username eq null}">
+            <span><c:out value="${sessionScope.student.name}"/> </span>
+        </c:if>
     </div>    
     
     </div>
-    <script>
-        $(function(){
-            if(${sessionScope.student.name eq null}){
-                window.location.href="login.jsp";
-            }
-        })
-    </script>
 </body>
 </html>

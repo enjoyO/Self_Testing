@@ -35,7 +35,7 @@ public class QuestionBankController {
     @RequestMapping("/addQuestion")
     public String addQuestion(QuestionBank questionBank){
         questionBankService.addQuestion(questionBank);
-        return "tab （试题管理）.jsp";
+        return "/tab_manage_questions.jsp";
     }
 
     @RequestMapping("/deleteQuestion")
@@ -72,6 +72,6 @@ public class QuestionBankController {
         request.setAttribute("paperId",paperId);
         TestPaper paper = testPaperService.modifyPaper(paperId);
         request.setAttribute("pa",paper);
-        return "tab （试题计组）.jsp";
+        return "/tab_questions.jsp";
     }
 }

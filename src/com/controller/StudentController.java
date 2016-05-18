@@ -97,7 +97,7 @@ public class StudentController {
                 request.setAttribute("allStudents", list);
             }
         }
-        return "right（用户）.jsp";
+        return "/right_stu.jsp";
     }
 
     @RequestMapping("/findByName")
@@ -120,6 +120,13 @@ public class StudentController {
     public String getAllStudents(HttpServletRequest request) {
         List<Student> list = studentService.getAllStudents();
         request.setAttribute("allStudents", list);
-        return "right（用户）.jsp";
+        return "/right_stu.jsp";
+    }
+
+    @RequestMapping("/quit")
+    public String quit(HttpSession session){
+        session.setAttribute("admin",null);
+        session.setAttribute("student",null);
+        return "login.jsp";
     }
 }

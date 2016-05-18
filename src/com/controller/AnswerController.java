@@ -109,7 +109,7 @@ public class AnswerController {
         request.setAttribute("answers",list);
         request.setAttribute("students",list1);
         request.setAttribute("papers",list2);
-        return "right（成绩单）.jsp";
+        return "/right_transcripts.jsp";
     }
 
     @RequestMapping("/examState")
@@ -133,6 +133,6 @@ public class AnswerController {
         request.setAttribute("answers",list);
         request.setAttribute("students",list1);
         request.setAttribute("papers",list2);
-        return "right（成绩单）.jsp";
+        return "/right_transcripts.jsp";
     }
 }
