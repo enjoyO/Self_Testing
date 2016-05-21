@@ -36,7 +36,7 @@
     <ul class="placeul">
         <li><a href="#">用户</a></li>
         <li><a href="enter_self_test.jsp">进入自测</a></li>
-        <li><a href="#">计算机组成原理</a></li>
+        <li><a href="#">答题中</a></li>
     </ul>
 </div>
 
