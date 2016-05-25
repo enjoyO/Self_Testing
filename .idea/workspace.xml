@@ -1,21 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b02fd632-5c73-4438-8a75-93ff629b58b9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/controller/AnswerController.class" afterPath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/controller/AnswerController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/controller/MessagesController.class" afterPath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/controller/MessagesController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/controller/QuestionBankController.class" afterPath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/controller/QuestionBankController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/controller/StudentController.class" afterPath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/controller/StudentController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/controller/SubjectController.class" afterPath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/controller/SubjectController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/controller/TestPaperController.class" afterPath="$PROJECT_DIR$/out/artifacts/Self_Testing_war_exploded/WEB-INF/classes/com/controller/TestPaperController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Self_Testing/com/controller/AnswerController.class" afterPath="$PROJECT_DIR$/out/production/Self_Testing/com/controller/AnswerController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Self_Testing/com/controller/MessagesController.class" afterPath="$PROJECT_DIR$/out/production/Self_Testing/com/controller/MessagesController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Self_Testing/com/controller/QuestionBankController.class" afterPath="$PROJECT_DIR$/out/production/Self_Testing/com/controller/QuestionBankController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Self_Testing/com/controller/StudentController.class" afterPath="$PROJECT_DIR$/out/production/Self_Testing/com/controller/StudentController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Self_Testing/com/controller/SubjectController.class" afterPath="$PROJECT_DIR$/out/production/Self_Testing/com/controller/SubjectController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Self_Testing/com/controller/TestPaperController.class" afterPath="$PROJECT_DIR$/out/production/Self_Testing/com/controller/TestPaperController.class" />
+    <list default="true" id="b02fd632-5c73-4438-8a75-93ff629b58b9" name="Default" comment="fix bugs">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/imglist_answer_questions.jsp" afterPath="$PROJECT_DIR$/web/imglist_answer_questions.jsp" />
     </list>
     <ignored path="Self_Testing.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -163,6 +150,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -197,7 +185,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -811,7 +798,10 @@
       <workItem from="1463567287887" duration="1582000" />
       <workItem from="1463818231932" duration="606000" />
       <workItem from="1463820088215" duration="121000" />
-      <workItem from="1463821071059" duration="50000" />
+      <workItem from="1463821071059" duration="229000" />
+      <workItem from="1463821334425" duration="3000" />
+      <workItem from="1463850740986" duration="9000" />
+      <workItem from="1464184766102" duration="2000" />
     </task>
     <task id="LOCAL-00001" summary="add README.md">
       <created>1458802515526</created>
@@ -951,11 +941,17 @@
       <option name="project" value="LOCAL" />
       <updated>1463567927371</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="fix bugs">
+      <created>1463821216648</created>
+      <option name="number" value="00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1463821216648</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133252000" />
+    <option name="totallyTimeSpent" value="133445000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1370" height="744" extended-state="0" />
@@ -964,12 +960,10 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21344166" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -985,8 +979,10 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2807571" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32492113" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1298,13 +1294,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.008695652">
           <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
         </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/right_stu.jsp">
